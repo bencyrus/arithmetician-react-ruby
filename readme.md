@@ -30,7 +30,69 @@ The behaviour of the app will be:
 
 The app will be built with:
 
--   React
+FrontEnd:
+
+-   ReactJS
+-   react-router-dom v6
+-   Jest
+
+BackEnd:
+
 -   Ruby on Rails
 -   PostgreSQL
--   Jest
+
+FrontEnd pages:
+
+-   Home page
+-   Game page
+-   Score page
+
+FrontEnd components:
+Home page:
+
+-   App
+-   GameSettingsForm
+-   PastScores
+
+Game page:
+
+-   Timer
+-   Score
+-   Question
+
+Score page:
+
+-   Score
+
+Shared components:
+
+-   Button
+
+FrontEnd routes:
+
+-   /home
+-   /game
+-   /score
+
+FrontEnd state:
+
+-   Global state:
+
+    -   additionRange
+    -   multiplicationRange
+    -   duration
+
+-   Home page:
+
+    -   pastScores
+
+-   Game page:
+
+    -   score
+    -   timer
+    -   question
+    -   correctAnswer
+    -   userAnswer
+
+-   Score page:
+    -   score
