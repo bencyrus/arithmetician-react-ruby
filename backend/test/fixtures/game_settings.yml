@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  addition_range_start: 1
+  addition_range_end: 1
+  multiplication_range_start: 1
+  multiplication_range_end: 1
+  duration: 1
+
+two:
+  addition_range_start: 1
+  addition_range_end: 1
+  multiplication_range_start: 1
+  multiplication_range_end: 1
+  duration: 1
