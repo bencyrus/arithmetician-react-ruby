@@ -1,44 +1,41 @@
-import React, { useState } from 'react';
+import { useContext } from 'react'
+import GameContext from '../context/GameContext'
+import RangeInput from '../components/RangeInput'
+import DurationSelect from '../components/DurationSelect'
 
-function GameSettingsForm() {
-  const [additionRange, setAdditionRange] = useState({ min: 2, max: 100 });
-  const [multiplicationRange, setMultiplicationRange] = useState({ min: 2, max: 12 });
-  const [duration, setDuration] = useState(120);
+const GameSettingsForm = () => {
+	const {
+		additionRange,
+		setAdditionRange,
+		multiplicationRange,
+		setMultiplicationRange,
+		duration,
+		setDuration,
+	} = useContext(GameContext)
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-  };
+	const handleSubmit = (event) => {
+		event.preventDefault()
+		console.log('additionRange', additionRange)
+		console.log('multiplicationRange', multiplicationRange)
+		console.log('duration', duration)
+	}
 
-  return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Addition Range:
-        <input type="number" value={additionRange.min} onChange={(e) => setAdditionRange({ ...additionRange, min: e.target.value })} />
-        to
-        <input type="number" value={additionRange.max} onChange={(e) => setAdditionRange({ ...additionRange, max: e.target.value })} />
-      </label>
-
-      <label>
-        Multiplication Range:
-        <input type="number" value={multiplicationRange.min} onChange={(e) => setMultiplicationRange({ ...multiplicationRange, min: e.target.value })} />
-        to
-        <input type="number" value={multiplicationRange.max} onChange={(e) => setMultiplicationRange({ ...multiplicationRange, max: e.target.value })} />
-      </label>
-
-      <label>
-        Duration:
-        <select value={duration} onChange={(e) => setDuration(e.target.value)}>
-          <option value="30">30 seconds</option>
-          <option value="60">60 seconds</option>
-          <option value="120">120 seconds</option>
-          <option value="300">300 seconds</option>
-          <option value="600">600 seconds</option>
-        </select>
-      </label>
-
-      <button type="submit">Start Game</button>
-    </form>
-  );
+	return (
+		<form onSubmit={handleSubmit}>
+			<RangeInput
+				value={additionRange}
+				onChange={setAdditionRange}
+				label="Addition Range"
+			/>
+			<RangeInput
+				value={multiplicationRange}
+				onChange={setMultiplicationRange}
+				label="Multiplication Range"
+			/>
+			<DurationSelect value={duration} onChange={setDuration} />
+			<button type="submit">Start Game</button>
+		</form>
+	)
 }
 
-export default GameSettingsForm;
+export default GameSettingsForm

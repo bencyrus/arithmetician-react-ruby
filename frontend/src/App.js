@@ -1,10 +1,13 @@
 import { Outlet } from 'react-router-dom'
+import GameProvider from './context/GameProvider'
 
 function App() {
 	return (
-		<div className="App">
-			<Outlet />
-		</div>
+		<GameProvider>
+			<div className="App">
+				<Outlet />
+			</div>
+		</GameProvider>
 	)
 }
 
