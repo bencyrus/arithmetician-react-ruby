@@ -3,3 +3,5 @@ const ScorePage = () => (
 		<h1>Score Page</h1>
 	</div>
 )
+
+export default ScorePage

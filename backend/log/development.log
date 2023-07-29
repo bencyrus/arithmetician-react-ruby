@@ -298,3 +298,8 @@ Processing by Api::V1::GamesController#index as HTML
 Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2344)
 
 
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-29 02:31:49 +0000
+Processing by Api::V1::GamesController#index as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | Allocations: 160)
+
+
