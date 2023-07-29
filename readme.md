@@ -48,10 +48,10 @@ BackEnd:
 
 ### Components:
 
--   Home page: App, GameSettingsForm, PastScores
+-   Home page: GameSettingsForm, pastGames
 -   Game page: Timer, Score, Question
 -   Score page: Score
--   Shared components: Button
+-   Shared components: Button, ExpandableList
 
 ### Routes:
 
@@ -62,7 +62,7 @@ BackEnd:
 ### State:
 
 -   Global state: additionRange, multiplicationRange, duration
--   Home page: pastScores
+-   Home page: pastGames
 -   Game page: score, timer, question, correctAnswer, userAnswer
 -   Score page: score
 
