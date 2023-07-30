@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { AiOutlineDown, AiOutlineUp } from 'react-icons/ai'
 
-const ExpandableListItem = ({ game }) => {
+const PastGameListItem = ({ game }) => {
 	const [isOpen, setIsOpen] = useState(false)
 
 	const handleToggle = () => {
@@ -29,4 +29,4 @@ const ExpandableListItem = ({ game }) => {
 	)
 }
 
-export default ExpandableListItem
+export default PastGameListItem

@@ -1,4 +1,4 @@
-import ExpandableListItem from './ExpandableListItem'
+import PastGameListItem from './PastGameListItem'
 
 const PastGames = () => {
 	const pastGames = [
@@ -38,7 +38,7 @@ const PastGames = () => {
 		<div>
 			<h1>Past Games</h1>
 			{pastGames.map((game) => (
-				<ExpandableListItem key={game.id} game={game} />
+				<PastGameListItem key={game.id} game={game} />
 			))}
 		</div>
 	)
