@@ -20,28 +20,30 @@ const GameSettingsForm = () => {
 
 	const navigate = useNavigate()
 
+	const validateNotEmptyAndPositive = (range) => {
+		const { min, max } = range
+		return min && min >= 0 && max && max >= 0
+	}
+
+	const validateProperOrder = (range) => {
+		const { min, max } = range
+		return min < max
+	}
+
 	const handleSubmit = (event) => {
 		event.preventDefault()
 
-		// Ensure addition and multiplication ranges are not empty and numbers are not less than 0
 		if (
-			!additionRange.min ||
-			additionRange.min < 0 ||
-			!additionRange.max ||
-			additionRange.max < 0 ||
-			!multiplicationRange.min ||
-			multiplicationRange.min < 0 ||
-			!multiplicationRange.max ||
-			multiplicationRange.max < 0
+			!validateNotEmptyAndPositive(additionRange) ||
+			!validateNotEmptyAndPositive(multiplicationRange)
 		) {
 			alert("Values can't be empty or less than 0!")
 			return
 		}
 
-		// Ensure that the first number isn't larger than or equal to the second number
 		if (
-			additionRange.min >= additionRange.max ||
-			multiplicationRange.min >= multiplicationRange.max
+			!validateProperOrder(additionRange) ||
+			!validateProperOrder(multiplicationRange)
 		) {
 			alert(
 				"The first number can't be larger than or the same as the second number!"
