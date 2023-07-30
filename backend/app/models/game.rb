@@ -1,3 +1,4 @@
 class Game < ApplicationRecord
-  belongs_to :game_setting
+  has_one :game_setting
+  has_many :questions
 end

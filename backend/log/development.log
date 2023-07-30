@@ -577,3 +577,45 @@ Processing by Api::V1::QuestionsController#create as */*
 Completed 200 OK in 1ms (Views: 0.7ms | Allocations: 2802)
 
 
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-30 21:45:33 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (64.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::GamesController#index as HTML
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2346)
+
+
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 21:45:44 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "question"=>{}}
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 191.2ms | Allocations: 3413)
+
+
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 21:47:15 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "question"=>{}}
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 3074)
+
+
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 21:47:24 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "question"=>{}}
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 3075)
+
+
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 21:48:01 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "question"=>{}}
+Completed 200 OK in 12ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 3072)
+
+
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 21:48:35 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "question"=>{}}
+Completed 200 OK in 15ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 3073)
+
+
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 21:49:19 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "question"=>{}}
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 3076)
+
+
