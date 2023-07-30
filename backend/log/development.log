@@ -303,3 +303,93 @@ Processing by Api::V1::GamesController#index as HTML
 Completed 200 OK in 1ms (Views: 0.2ms | Allocations: 160)
 
 
+Started GET "/" for 99.240.133.107 at 2023-07-30 15:38:11 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (67.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/rvm/gems/ruby-3.2.2/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-3.2.2/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 15.6ms | Allocations: 490)
+Completed 200 OK in 32ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 4063)
+
+
+Started GET "/api/v1/questions" for 99.240.133.107 at 2023-07-30 15:38:42 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/questions"):
+  
+Started POST "/api/v1/questions" for ::1 at 2023-07-30 15:43:13 +0000
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-30 15:50:35 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (67.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::GamesController#index as HTML
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2344)
+
+
+Started GET "/" for 99.240.133.107 at 2023-07-30 15:50:38 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/rvm/gems/ruby-3.2.2/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-3.2.2/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.3ms | Allocations: 487)
+Completed 200 OK in 23ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 3972)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-30 15:50:52 +0000
+Processing by Api::V1::GamesController#index as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-30 15:51:03 +0000
+Processing by Api::V1::GamesController#index as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 88)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-30 16:01:35 +0000
+Processing by Api::V1::GamesController#index as HTML
+Completed 200 OK in 19ms (Views: 18.4ms | Allocations: 86)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-30 16:06:09 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (68.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::GamesController#index as HTML
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2346)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-30 16:12:11 +0000
+Processing by Api::V1::GamesController#index as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | Allocations: 159)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-30 16:12:14 +0000
+Processing by Api::V1::GamesController#index as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | Allocations: 89)
+
+
+Started GET "/favicon.ico" for 99.240.133.107 at 2023-07-30 16:12:14 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-30 16:14:50 +0000
+Processing by Api::V1::GamesController#index as */*
+  Parameters: {"game"=>{}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 1086.9ms | Allocations: 95)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-30 16:14:52 +0000
+Processing by Api::V1::GamesController#index as */*
+  Parameters: {"game"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 91)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-30 16:15:30 +0000
+Processing by Api::V1::GamesController#index as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 85)
+
+
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 16:15:33 +0000
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 16:15:33 +0000
+Processing by Api::V1::QuestionsController#create as */*
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>120, "question"=>{}}
+Completed 200 OK in 31ms (Views: 28.0ms | ActiveRecord: 68.8ms | Allocations: 10993)
+
+
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>120, "question"=>{}}
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 10903)
+
+
