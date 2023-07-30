@@ -10,12 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_29_014914) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_30_222645) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "timescaledb"
 
   create_table "game_settings", force: :cascade do |t|
+    t.bigint "game_id", null: false
     t.integer "addition_range_start"
     t.integer "addition_range_end"
     t.integer "multiplication_range_start"
@@ -23,25 +24,27 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_29_014914) do
     t.integer "duration"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["game_id"], name: "index_game_settings_on_game_id"
   end
 
   create_table "games", force: :cascade do |t|
-    t.bigint "game_setting_id", null: false
     t.integer "score"
-    t.datetime "timestamp"
+    t.datetime "end_timestamp"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["game_setting_id"], name: "index_games_on_game_setting_id"
   end
 
   create_table "questions", force: :cascade do |t|
-    t.integer "first_num"
-    t.integer "second_num"
-    t.string "operation_type"
+    t.bigint "game_id", null: false
+    t.integer "num1"
+    t.integer "num2"
+    t.string "op_type"
     t.integer "answer"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["game_id"], name: "index_questions_on_game_id"
   end
 
-  add_foreign_key "games", "game_settings"
+  add_foreign_key "game_settings", "games"
+  add_foreign_key "questions", "games"
 end
