@@ -49,12 +49,36 @@ const GamePage = () => {
 	}
 
 	return (
-		<div id="game-page">
-			<div>
+		<div
+			id="game-page"
+			style={{
+				display: 'flex',
+				flexDirection: 'column',
+				justifyContent: 'flex-start',
+				alignItems: 'center',
+				height: '100vh',
+				paddingTop: '10px',
+			}}
+		>
+			<div
+				style={{
+					display: 'flex',
+					justifyContent: 'space-between',
+					width: '95%',
+				}}
+			>
 				<Timer initialTime={duration} onTimeOut={setGame} />
 				<span>Score: {score}</span>
 			</div>
-			<div>
+			<div
+				style={{
+					flexGrow: 1,
+					display: 'flex',
+					justifyContent: 'center',
+					alignItems: 'center',
+					width: '100%',
+				}}
+			>
 				<Question
 					question={questions[currentQuestionIndex]}
 					onCorrectAnswer={handleCorrectAnswer}

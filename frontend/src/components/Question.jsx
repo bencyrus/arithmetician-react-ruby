@@ -11,7 +11,14 @@ const Question = ({ question, onCorrectAnswer }) => {
 	}
 
 	return (
-		<div>
+		<div
+			style={{
+				display: 'flex',
+				alignItems: 'center',
+				fontSize: '2em',
+				gap: '1rem',
+			}}
+		>
 			<span>{question.num1}</span>
 			<span>{question.opType}</span>
 			<span>{question.num2}</span>
