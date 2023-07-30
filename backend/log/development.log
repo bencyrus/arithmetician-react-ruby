@@ -454,3 +454,114 @@ Processing by Api::V1::QuestionsController#create as */*
 Completed 200 OK in 2ms (Views: 1.5ms | Allocations: 2805)
 
 
+Started GET "/" for 99.240.133.107 at 2023-07-30 20:09:43 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (67.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/rvm/gems/ruby-3.2.2/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-3.2.2/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 15.7ms | Allocations: 490)
+Completed 200 OK in 31ms (Views: 19.7ms | ActiveRecord: 0.0ms | Allocations: 4062)
+
+
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 20:11:53 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "question"=>{}}
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 200.5ms | Allocations: 3018)
+
+
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 20:16:22 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "question"=>{}}
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 2805)
+
+
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 20:16:43 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "question"=>{}}
+Completed 200 OK in 39ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 2805)
+
+
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 20:23:28 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "question"=>{}}
+Completed 200 OK in 3ms (Views: 2.4ms | Allocations: 2806)
+
+
+Started GET "/public/spinner.gif" for 99.240.133.107 at 2023-07-30 20:25:26 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/public/spinner.gif"):
+  
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 20:25:26 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "question"=>{}}
+Completed 200 OK in 2ms (Views: 0.9ms | Allocations: 2802)
+
+
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 20:26:34 +0000
+Started GET "/public/spinner.gif" for 99.240.133.107 at 2023-07-30 20:26:34 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/public/spinner.gif"):
+  
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>120, "question"=>{}}
+Completed 200 OK in 5ms (Views: 2.9ms | Allocations: 10902)
+
+
+Started GET "/" for 99.240.133.107 at 2023-07-30 20:43:21 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (64.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/rvm/gems/ruby-3.2.2/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-3.2.2/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 15.9ms | Allocations: 490)
+Completed 200 OK in 29ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 4062)
+
+
+Started GET "/public/spinner.gif" for 99.240.133.107 at 2023-07-30 20:44:46 +0000
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 20:44:46 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/public/spinner.gif"):
+  
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "question"=>{}}
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 192.1ms | Allocations: 2966)
+
+
+Started GET "/public/spinner.gif" for 99.240.133.107 at 2023-07-30 20:45:16 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/public/spinner.gif"):
+  
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 20:45:57 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "question"=>{}}
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 2804)
+
+
+Started GET "/public/spinner.gif" for 99.240.133.107 at 2023-07-30 20:45:59 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/public/spinner.gif"):
+  
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-30 20:46:09 +0000
+Processing by Api::V1::GamesController#index as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 146)
+
+
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 20:46:29 +0000
+Started GET "/public/spinner.gif" for 99.240.133.107 at 2023-07-30 20:46:29 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "question"=>{}}
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 2802)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/public/spinner.gif"):
+  
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 20:47:39 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "question"=>{}}
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 2802)
+
+
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 20:50:29 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "question"=>{}}
+Completed 200 OK in 1ms (Views: 0.7ms | Allocations: 2802)
+
+
