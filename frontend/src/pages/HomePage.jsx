@@ -1,32 +1,34 @@
 import PastGames from '../components/PastGames'
 import GameSettingsForm from '../components/GameSettingsForm'
 
-const HomePage = () => (
-	<div
-		id="home-page"
-		style={{
-			display: 'flex',
-			justifyContent: 'space-between',
-		}}
-	>
+const HomePage = () => {
+	return (
 		<div
+			id="home-page"
 			style={{
-				flex: 1,
-				maxWidth: 300,
-				marginRight: '1rem',
+				display: 'flex',
+				justifyContent: 'space-between',
 			}}
 		>
-			<PastGames />
+			<div
+				style={{
+					flex: 1,
+					maxWidth: 300,
+					marginRight: '1rem',
+				}}
+			>
+				<PastGames />
+			</div>
+			<div
+				style={{
+					flex: 2,
+				}}
+			>
+				<h1>Home Page</h1>
+				<GameSettingsForm />
+			</div>
 		</div>
-		<div
-			style={{
-				flex: 2,
-			}}
-		>
-			<h1>Home Page</h1>
-			<GameSettingsForm />
-		</div>
-	</div>
-)
+	)
+}
 
 export default HomePage
