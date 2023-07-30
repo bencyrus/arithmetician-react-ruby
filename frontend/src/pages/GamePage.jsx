@@ -20,18 +20,33 @@ const GamePage = () => {
 	const navigate = useNavigate()
 
 	const setGame = useCallback(() => {
-		console.log({
-			additionRange,
-			multiplicationRange,
-			duration,
+		const requestBody = {
 			score,
 			endTimestamp: new Date(),
+			additionRange: additionRange,
+			multiplicationRange: multiplicationRange,
+			duration,
 			answeredQuestions,
+		}
+
+		fetch('/api/v1/games', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify(requestBody),
 		})
-		setQuestions([])
-		setCurrentQuestionIndex(0)
-		setAnsweredQuestions([])
-		navigate('/score')
+			.then((response) => response.json())
+			.then((data) => {
+				console.log(data)
+				setQuestions([])
+				setCurrentQuestionIndex(0)
+				setAnsweredQuestions([])
+				navigate('/score')
+			})
+			.catch((error) => {
+				console.error('Error:', error)
+			})
 	}, [
 		additionRange,
 		multiplicationRange,
