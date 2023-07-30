@@ -15,6 +15,7 @@ const useFetch = (url, options) => {
 				setIsLoading(false)
 			} catch (error) {
 				setError(error)
+				setIsLoading(false)
 			}
 		}
 		fetchData()
