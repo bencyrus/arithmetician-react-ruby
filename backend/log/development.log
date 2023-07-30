@@ -393,3 +393,64 @@ Completed 200 OK in 31ms (Views: 28.0ms | ActiveRecord: 68.8ms | Allocations: 10
 Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 10903)
 
 
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 16:20:46 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "question"=>{}}
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 106)
+
+
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 16:22:27 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "question"=>{}}
+Completed 200 OK in 0ms (Views: 0.2ms | Allocations: 106)
+
+
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 16:22:31 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "question"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | Allocations: 105)
+
+
+Started GET "/" for 99.240.133.107 at 2023-07-30 16:41:52 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (68.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/rvm/gems/ruby-3.2.2/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-3.2.2/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.1ms | Allocations: 490)
+Completed 200 OK in 24ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 4062)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-30 16:42:15 +0000
+Processing by Api::V1::GamesController#index as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 275)
+
+
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 16:42:36 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>120, "question"=>{}}
+Completed 200 OK in 23ms (Views: 20.3ms | ActiveRecord: 203.4ms | Allocations: 10995)
+
+
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 16:45:15 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "question"=>{}}
+Completed 200 OK in 245ms (Views: 86.6ms | ActiveRecord: 0.0ms | Allocations: 2803)
+
+
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 16:46:48 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "question"=>{}}
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 2806)
+
+
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 16:47:49 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "question"=>{}}
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 2803)
+
+
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 16:48:59 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "question"=>{}}
+Completed 200 OK in 2ms (Views: 1.5ms | Allocations: 2805)
+
+

@@ -4,8 +4,6 @@ import GameContext from '../context/GameContext'
 import RangeInput from '../components/RangeInput'
 import DurationSelect from '../components/DurationSelect'
 
-import { getQuestionList } from '../backend'
-
 const GameSettingsForm = () => {
 	const {
 		additionRange,
@@ -50,12 +48,23 @@ const GameSettingsForm = () => {
 			return
 		}
 
-		getQuestionList(additionRange, multiplicationRange, duration).then(
-			(questionList) => {
-				setQuestions(questionList)
+		fetch('/api/v1/questions', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({
+				additionRange,
+				multiplicationRange,
+				duration,
+			}),
+		})
+			.then((response) => response.json())
+			.then((data) => {
+				setQuestions(data)
 				navigate('/game')
-			}
-		)
+			})
+			.catch()
 	}
 
 	return (
