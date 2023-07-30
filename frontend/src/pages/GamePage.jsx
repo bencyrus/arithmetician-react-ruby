@@ -1,6 +1,8 @@
-import { useContext, useState, useRef, useEffect, useCallback } from 'react'
+import { useContext, useState, useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
 import GameContext from '../context/GameContext'
+import Question from '../components/Question'
+import Timer from '../components/Timer'
 
 const GamePage = () => {
 	const {
@@ -12,10 +14,9 @@ const GamePage = () => {
 		score,
 		setScore,
 	} = useContext(GameContext)
+
 	const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
-	const [timer, setTimer] = useState(duration)
 	const [answeredQuestions, setAnsweredQuestions] = useState([])
-	const inputRef = useRef()
 	const navigate = useNavigate()
 
 	const setGame = useCallback(() => {
@@ -30,7 +31,6 @@ const GamePage = () => {
 		setQuestions([])
 		setCurrentQuestionIndex(0)
 		setAnsweredQuestions([])
-		setTimer(duration)
 		navigate('/score')
 	}, [
 		additionRange,
@@ -42,67 +42,23 @@ const GamePage = () => {
 		navigate,
 	])
 
-	useEffect(() => {
-		if (timer <= 0) {
-			setGame()
-		} else {
-			const intervalId = setInterval(() => {
-				setTimer((t) => t - 1)
-			}, 1000)
-
-			return () => clearInterval(intervalId)
-		}
-	}, [timer, setGame])
-
-	const handleAnswer = (event) => {
-		if (
-			parseInt(event.target.value, 10) ===
-			questions[currentQuestionIndex].answer
-		) {
-			setScore((s) => s + 1)
-			setAnsweredQuestions((aqs) => [
-				...aqs,
-				questions[currentQuestionIndex],
-			])
-			setCurrentQuestionIndex((ci) => ci + 1)
-			event.target.value = ''
-		}
+	const handleCorrectAnswer = () => {
+		setScore((s) => s + 1)
+		setAnsweredQuestions((aqs) => [...aqs, questions[currentQuestionIndex]])
+		setCurrentQuestionIndex((ci) => ci + 1)
 	}
 
 	return (
 		<div id="game-page">
 			<div>
-				<span>Seconds left: {timer}</span>
+				<Timer initialTime={duration} onTimeOut={setGame} />
 				<span>Score: {score}</span>
 			</div>
 			<div>
-				{questions.length > currentQuestionIndex ? (
-					<>
-						<span>{questions[currentQuestionIndex].num1}</span>
-						<span>{questions[currentQuestionIndex].opType}</span>
-						<span>{questions[currentQuestionIndex].num2}</span>
-						<input
-							type="number"
-							onChange={handleAnswer}
-							ref={inputRef}
-						/>
-					</>
-				) : (
-					<div>
-						<h1>Your Score: {score}</h1>
-						<button onClick={() => navigate('/')}>
-							Change Settings
-						</button>
-						<button
-							onClick={() => {
-								setTimer(duration)
-								inputRef.current.focus()
-							}}
-						>
-							Try Again
-						</button>
-					</div>
-				)}
+				<Question
+					question={questions[currentQuestionIndex]}
+					onCorrectAnswer={handleCorrectAnswer}
+				/>
 			</div>
 		</div>
 	)
