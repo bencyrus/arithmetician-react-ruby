@@ -565,3 +565,15 @@ Processing by Api::V1::QuestionsController#create as */*
 Completed 200 OK in 1ms (Views: 0.7ms | Allocations: 2802)
 
 
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 20:56:09 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "question"=>{}}
+Completed 200 OK in 1ms (Views: 0.9ms | Allocations: 2802)
+
+
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-30 20:57:00 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "question"=>{}}
+Completed 200 OK in 1ms (Views: 0.7ms | Allocations: 2802)
+
+

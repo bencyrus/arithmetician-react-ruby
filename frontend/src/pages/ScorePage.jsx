@@ -1,8 +1,7 @@
 import { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import GameContext from '../context/GameContext'
-
-import { getQuestionList } from '../backend'
+import useQuestions from '../hooks/useQuestions'
 
 const ScorePage = () => {
 	const {
@@ -18,15 +17,24 @@ const ScorePage = () => {
 	} = useContext(GameContext)
 	const navigate = useNavigate()
 
+	const { fetchQuestions } = useQuestions(
+		{
+			additionRange,
+			multiplicationRange,
+			duration,
+		},
+		(questions) => {
+			setQuestions(questions)
+			navigate('/game')
+		},
+		(error) => {
+			alert('An error occurred while fetching the questions')
+		}
+	)
+
 	const handleTryAgain = () => {
 		setScore(0)
-
-		getQuestionList(additionRange, multiplicationRange, duration).then(
-			(questionList) => {
-				setQuestions(questionList)
-				navigate('/game')
-			}
-		)
+		fetchQuestions()
 	}
 
 	const handleChangeSettings = () => {
