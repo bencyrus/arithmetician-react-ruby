@@ -9,6 +9,9 @@ const GameProvider = ({ children }) => {
 	})
 	const [duration, setDuration] = useState(120)
 
+	const [questions, setQuestions] = useState([])
+	const [score, setScore] = useState(0)
+
 	return (
 		<GameContext.Provider
 			value={{
@@ -18,6 +21,10 @@ const GameProvider = ({ children }) => {
 				setAdditionRange,
 				setMultiplicationRange,
 				setDuration,
+				questions,
+				score,
+				setQuestions,
+				setScore,
 			}}
 		>
 			{children}

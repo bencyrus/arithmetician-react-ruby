@@ -7,6 +7,11 @@ const GameContext = createContext({
 	setAdditionRange: () => {},
 	setMultiplicationRange: () => {},
 	setDuration: () => {},
+
+	questions: [],
+	setQuestions: () => {},
+	score: 0,
+	setScore: () => {},
 })
 
 export default GameContext
