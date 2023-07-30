@@ -27,8 +27,6 @@ const ScorePage = () => {
 				navigate('/game')
 			}
 		)
-
-		navigate('/game')
 	}
 
 	const handleChangeSettings = () => {

@@ -7,7 +7,6 @@ import DurationSelect from '../components/DurationSelect'
 import { getQuestionList } from '../backend'
 
 const GameSettingsForm = () => {
-	const navigate = useNavigate()
 	const { setQuestions } = useContext(GameContext)
 
 	const {
@@ -18,6 +17,8 @@ const GameSettingsForm = () => {
 		duration,
 		setDuration,
 	} = useContext(GameContext)
+
+	const navigate = useNavigate()
 
 	const handleSubmit = (event) => {
 		event.preventDefault()
