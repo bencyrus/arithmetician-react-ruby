@@ -24,7 +24,7 @@ const HomePage = () => {
 					flex: 2,
 				}}
 			>
-				<h1>Home Page</h1>
+				<h1>Game Settings</h1>
 				<GameSettingsForm />
 			</div>
 		</div>

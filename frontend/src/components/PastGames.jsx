@@ -1,4 +1,4 @@
-import PastGameListItem from './PastGameListItem'
+import PastGamesListItem from './PastGamesListItem'
 
 const PastGames = () => {
 	const pastGames = [
@@ -38,7 +38,7 @@ const PastGames = () => {
 		<div>
 			<h1>Past Games</h1>
 			{pastGames.map((game) => (
-				<PastGameListItem key={game.id} game={game} />
+				<PastGamesListItem key={game.id} game={game} />
 			))}
 		</div>
 	)
