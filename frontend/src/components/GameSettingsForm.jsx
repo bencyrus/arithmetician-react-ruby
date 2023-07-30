@@ -7,8 +7,6 @@ import DurationSelect from '../components/DurationSelect'
 import { getQuestionList } from '../backend'
 
 const GameSettingsForm = () => {
-	const { setQuestions } = useContext(GameContext)
-
 	const {
 		additionRange,
 		setAdditionRange,
@@ -16,6 +14,7 @@ const GameSettingsForm = () => {
 		setMultiplicationRange,
 		duration,
 		setDuration,
+		setQuestions,
 	} = useContext(GameContext)
 
 	const navigate = useNavigate()
