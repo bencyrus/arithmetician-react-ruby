@@ -1,18 +1,27 @@
-const RangeInput = ({ value, onChange, label }) => (
-	<label>
-		{label}:
-		<input
-			type="number"
-			value={value.min}
-			onChange={(e) => onChange({ ...value, min: e.target.value })}
-		/>
-		to
-		<input
-			type="number"
-			value={value.max}
-			onChange={(e) => onChange({ ...value, max: e.target.value })}
-		/>
-	</label>
-)
+const RangeInput = ({ value, onChange, label }) => {
+    const handleChange = (key) => (e) => {
+        onChange({
+            ...value,
+            [key]: Number(e.target.value),
+        })
+    }
 
-export default RangeInput
+    return (
+        <label>
+            {label}:
+            <input
+                type="number"
+                value={value.min}
+                onChange={handleChange('min')}
+            />
+            to
+            <input
+                type="number"
+                value={value.max}
+                onChange={handleChange('max')}
+            />
+        </label>
+    )
+}
+
+export default RangeInput;
