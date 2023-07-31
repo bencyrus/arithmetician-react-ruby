@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import { ClipLoader } from 'react-spinners'
-import { AiOutlineDown, AiOutlineUp } from 'react-icons/ai'
+import { AiOutlineDown, AiOutlineUp, AiOutlineDelete } from 'react-icons/ai'
 
-const PastGamesListItem = ({ game }) => {
+const PastGamesListItem = ({ game, onDelete }) => {
 	const [isOpen, setIsOpen] = useState(false)
 	const [gameDetails, setGameDetails] = useState(null)
 	const [isLoading, setIsLoading] = useState(false)
@@ -25,6 +25,19 @@ const PastGamesListItem = ({ game }) => {
 		setIsOpen(!isOpen)
 	}
 
+	const handleDelete = () => {
+		fetch(`/api/v1/games/${game.id}`, {
+			method: 'DELETE',
+		})
+			.then((res) => res.json())
+			.then((data) => {
+				setGameDetails(null)
+				setIsOpen(false)
+			})
+			.catch((err) => console.log(err))
+		onDelete(game.id)
+	}
+
 	return (
 		<div>
 			<div
@@ -34,6 +47,7 @@ const PastGamesListItem = ({ game }) => {
 				<p>Score: {game.score}</p>
 				<p>{new Date(game.end_timestamp).toLocaleString()}</p>
 				{isOpen ? <AiOutlineUp /> : <AiOutlineDown />}
+				<AiOutlineDelete onClick={handleDelete} />
 			</div>
 			{isOpen && (
 				<div style={{ marginLeft: '1rem' }}>

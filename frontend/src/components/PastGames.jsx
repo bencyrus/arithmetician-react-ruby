@@ -6,6 +6,10 @@ const PastGames = () => {
 	const [pastGames, setPastGames] = useState([])
 	const [isLoading, setIsLoading] = useState(true)
 
+	const handleDeleteGame = (id) => {
+		setPastGames((pgs) => pgs.filter((pg) => pg.id !== id))
+	}
+
 	useEffect(() => {
 		setIsLoading(true)
 
@@ -40,7 +44,11 @@ const PastGames = () => {
 				<>
 					<h1>Past Games</h1>
 					{pastGames.map((game) => (
-						<PastGamesListItem key={game.id} game={game} />
+						<PastGamesListItem
+							key={game.id}
+							game={game}
+							onDelete={handleDeleteGame}
+						/>
 					))}
 				</>
 			)}
