@@ -15,7 +15,7 @@ const PastGamesListItem = ({ game }) => {
 				onClick={handleToggle}
 			>
 				<p>Score: {game.score}</p>
-				<p>{new Date(game.timestamp).toLocaleString()}</p>
+				<p>{new Date(game.end_timestamp).toLocaleString()}</p>
 				{isOpen ? <AiOutlineUp /> : <AiOutlineDown />}
 			</div>
 			{isOpen && (
