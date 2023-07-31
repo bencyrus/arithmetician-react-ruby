@@ -31,7 +31,6 @@ const GamePage = () => {
 	}
 
 	const onSubmitSuccess = (data) => {
-		console.log(data)
 		setQuestions([])
 		setCurrentQuestionIndex(0)
 		setAnsweredQuestions([])

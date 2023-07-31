@@ -31,8 +31,21 @@ module Api
       # GET /api/v1/games
       # Returns all games.
       def index
-        games = Game.all
+        games = Game.order(end_timestamp: :desc)
         render json: games
+      end
+
+      # GET /api/v1/games/:id
+      # Returns a game with the provided id, along with its settings and answered questions.
+      def show
+        game = Game.find(params[:id])
+        render json: {
+          game: game,
+          settings: game.game_setting,
+          answeredQuestions: game.questions
+        }
+      rescue ActiveRecord::RecordNotFound => e
+        render json: { errors: e.message }, status: :not_found
       end
     end
   end
