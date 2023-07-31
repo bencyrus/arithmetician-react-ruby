@@ -47,6 +47,16 @@ module Api
       rescue ActiveRecord::RecordNotFound => e
         render json: { errors: e.message }, status: :not_found
       end
+
+      # DELETE /api/v1/games/:id
+      # Deletes a game with the provided id along with its settings and answered questions.
+      def destroy
+        game = Game.find(params[:id])
+        game.destroy
+        render json: { message: 'Game successfully deleted' }, status: :ok
+      rescue ActiveRecord::RecordNotFound => e
+        render json: { errors: e.message }, status: :not_found
+      end
     end
   end
 end

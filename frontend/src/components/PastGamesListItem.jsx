@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
-import { AiOutlineDown, AiOutlineUp } from 'react-icons/ai'
+import { AiOutlineDown, AiOutlineUp, AiOutlineDelete } from 'react-icons/ai'
 import { ClipLoader } from 'react-spinners'
 import useFetch from '../hooks/useFetch' // path to useFetch
 
-const PastGamesListItem = ({ game }) => {
+const PastGamesListItem = ({ game, onDelete }) => {
 	const [isOpen, setIsOpen] = useState(false)
 	const { response: gameDetails, isLoading, fetchData } = useFetch()
 
@@ -17,6 +17,21 @@ const PastGamesListItem = ({ game }) => {
 		setIsOpen(!isOpen)
 	}
 
+	const handleDelete = async (event) => {
+		event.stopPropagation()
+		try {
+			const response = await fetch(`/api/v1/games/${game.id}`, {
+				method: 'DELETE',
+			})
+			if (!response.ok) {
+				throw new Error('Error when deleting the game')
+			}
+			onDelete(game.id)
+		} catch (error) {
+			console.error('Error:', error)
+		}
+	}
+
 	return (
 		<div>
 			<div
@@ -26,6 +41,7 @@ const PastGamesListItem = ({ game }) => {
 				<p>Score: {game.score}</p>
 				<p>{new Date(game.end_timestamp).toLocaleString()}</p>
 				{isOpen ? <AiOutlineUp /> : <AiOutlineDown />}
+				<AiOutlineDelete onClick={handleDelete} />
 			</div>
 			{isOpen && (
 				<div style={{ marginLeft: '1rem' }}>
@@ -35,7 +51,7 @@ const PastGamesListItem = ({ game }) => {
 								display: 'flex',
 								justifyContent: 'center',
 								alignItems: 'center',
-								height: '50px', // adjust this height to your needs
+								height: '50px',
 							}}
 						>
 							<ClipLoader color="#000" />

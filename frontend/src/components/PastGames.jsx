@@ -1,11 +1,15 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { ClipLoader } from 'react-spinners'
 import PastGamesListItem from './PastGamesListItem'
 import useFetch from '../hooks/useFetch'
 
 const PastGames = () => {
 	const { response, error, isLoading, fetchData } = useFetch()
-	const pastGames = response || []
+	const [pastGames, setPastGames] = useState([])
+
+	useEffect(() => {
+		setPastGames(response || [])
+	}, [response])
 
 	useEffect(() => {
 		fetchData('/api/v1/games')
@@ -13,6 +17,21 @@ const PastGames = () => {
 
 	if (error) {
 		return <div>An error occurred: {error.message}</div>
+	}
+
+	const handleDeleteGame = async (id) => {
+		try {
+			const response = await fetch(`/api/v1/games/${id}`, {
+				method: 'DELETE',
+			})
+			if (!response.ok) {
+				throw new Error('Error when deleting the game')
+			}
+			const updatedGames = pastGames.filter((game) => game.id !== id)
+			setPastGames(updatedGames)
+		} catch (error) {
+			console.error('Error:', error)
+		}
 	}
 
 	return (
@@ -37,7 +56,11 @@ const PastGames = () => {
 				<>
 					<h1>Past Games</h1>
 					{pastGames.map((game) => (
-						<PastGamesListItem key={game.id} game={game} />
+						<PastGamesListItem
+							key={game.id}
+							game={game}
+							onDelete={handleDeleteGame}
+						/>
 					))}
 				</>
 			)}

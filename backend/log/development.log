@@ -6213,3 +6213,590 @@ Processing by Api::V1::GamesController#show as */*
 Completed 200 OK in 277ms (Views: 3.7ms | ActiveRecord: 201.3ms | Allocations: 3338)
 
 
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 00:54:26 +0000
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 02:31:42 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (69.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (69.9ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 380ms (Views: 8.2ms | ActiveRecord: 346.1ms | Allocations: 10047)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 02:31:45 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 138ms (Views: 2.5ms | ActiveRecord: 67.6ms | Allocations: 1589)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 02:31:51 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.8ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 139ms (Views: 2.8ms | ActiveRecord: 67.8ms | Allocations: 1586)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 02:31:51 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 138ms (Views: 2.4ms | ActiveRecord: 67.6ms | Allocations: 1586)
+
+
+Started GET "/api/v1/games/9" for 99.240.133.107 at 2023-07-31 02:31:52 +0000
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mGame Load (67.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:41:in `show'
+  [1m[36mGameSetting Load (68.6ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:44:in `show'
+  [1m[36mQuestion Load (77.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 9]]
+  ↳ app/controllers/api/v1/games_controller.rb:42:in `show'
+Completed 200 OK in 945ms (Views: 78.5ms | ActiveRecord: 559.7ms | Allocations: 16692)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 02:43:51 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (69.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 1761ms (Views: 2.6ms | ActiveRecord: 962.7ms | Allocations: 4419)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 02:43:53 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.5ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 138ms (Views: 3.1ms | ActiveRecord: 67.5ms | Allocations: 1575)
+
+
+Started GET "/api/v1/games/9" for 99.240.133.107 at 2023-07-31 02:43:55 +0000
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mGame Load (67.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:41:in `show'
+  [1m[36mGameSetting Load (68.2ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:44:in `show'
+  [1m[36mQuestion Load (68.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 9]]
+  ↳ app/controllers/api/v1/games_controller.rb:42:in `show'
+Completed 200 OK in 549ms (Views: 71.2ms | ActiveRecord: 271.3ms | Allocations: 3398)
+
+
+Started DELETE "/api/v1/games/9" for 99.240.133.107 at 2023-07-31 02:44:03 +0000
+Processing by Api::V1::GamesController#destroy as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mGame Load (67.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:54:in `destroy'
+  [1m[36mTRANSACTION (67.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGame Destroy (68.7ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mTRANSACTION (67.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+Completed 500 Internal Server Error in 344ms (ActiveRecord: 271.0ms | Allocations: 2390)
+
+
+  
+ActiveRecord::InvalidForeignKey (PG::ForeignKeyViolation: ERROR:  update or delete on table "games" violates foreign key constraint "fk_rails_15b890b0e5" on table "game_settings"
+DETAIL:  Key (id)=(9) is still referenced from table "game_settings".
+):
+  
+app/controllers/api/v1/games_controller.rb:55:in `destroy'
+Started GET "/api/v1/games/9" for 99.240.133.107 at 2023-07-31 02:44:03 +0000
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mGame Load (67.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:41:in `show'
+  [1m[36mGameSetting Load (67.6ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:44:in `show'
+  [1m[36mQuestion Load (67.7ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 9]]
+  ↳ app/controllers/api/v1/games_controller.rb:42:in `show'
+Completed 200 OK in 278ms (Views: 4.9ms | ActiveRecord: 202.9ms | Allocations: 3338)
+
+
+Started GET "/api/v1/games/9" for 99.240.133.107 at 2023-07-31 02:44:08 +0000
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mGame Load (67.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:41:in `show'
+  [1m[36mGameSetting Load (67.6ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:44:in `show'
+  [1m[36mQuestion Load (67.7ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 9]]
+  ↳ app/controllers/api/v1/games_controller.rb:42:in `show'
+Completed 200 OK in 278ms (Views: 4.3ms | ActiveRecord: 202.8ms | Allocations: 3339)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 02:49:11 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (68.0ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 141ms (Views: 3.0ms | ActiveRecord: 68.0ms | Allocations: 1574)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 02:49:12 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (68.9ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 139ms (Views: 2.6ms | ActiveRecord: 68.9ms | Allocations: 1574)
+
+
+Started GET "/api/v1/games/9" for 99.240.133.107 at 2023-07-31 02:49:13 +0000
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mGame Load (67.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:41:in `show'
+  [1m[36mGameSetting Load (68.3ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:44:in `show'
+  [1m[36mQuestion Load (67.8ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 9]]
+  ↳ app/controllers/api/v1/games_controller.rb:42:in `show'
+Completed 200 OK in 278ms (Views: 3.5ms | ActiveRecord: 203.7ms | Allocations: 3337)
+
+
+Started GET "/api/v1/games/9" for 99.240.133.107 at 2023-07-31 02:49:15 +0000
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mGame Load (67.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:41:in `show'
+  [1m[36mGameSetting Load (67.7ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:44:in `show'
+  [1m[36mQuestion Load (67.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 9]]
+  ↳ app/controllers/api/v1/games_controller.rb:42:in `show'
+Completed 200 OK in 277ms (Views: 3.2ms | ActiveRecord: 202.8ms | Allocations: 3340)
+
+
+Started GET "/api/v1/games/9" for 99.240.133.107 at 2023-07-31 02:49:17 +0000
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mGame Load (67.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:41:in `show'
+  [1m[36mGameSetting Load (67.6ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:44:in `show'
+  [1m[36mQuestion Load (67.8ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 9]]
+  ↳ app/controllers/api/v1/games_controller.rb:42:in `show'
+Completed 200 OK in 277ms (Views: 3.5ms | ActiveRecord: 202.8ms | Allocations: 3338)
+
+
+Started DELETE "/api/v1/games/9" for 99.240.133.107 at 2023-07-31 02:49:21 +0000
+Processing by Api::V1::GamesController#destroy as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mGame Load (67.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:54:in `destroy'
+  [1m[36mTRANSACTION (68.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGame Destroy (68.6ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mTRANSACTION (67.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+Completed 500 Internal Server Error in 344ms (ActiveRecord: 271.3ms | Allocations: 2133)
+
+
+  
+ActiveRecord::InvalidForeignKey (PG::ForeignKeyViolation: ERROR:  update or delete on table "games" violates foreign key constraint "fk_rails_15b890b0e5" on table "game_settings"
+DETAIL:  Key (id)=(9) is still referenced from table "game_settings".
+):
+  
+app/controllers/api/v1/games_controller.rb:55:in `destroy'
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 02:53:16 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.9ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 424ms (Views: 4.0ms | ActiveRecord: 348.7ms | Allocations: 4552)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 02:53:17 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 138ms (Views: 2.4ms | ActiveRecord: 67.6ms | Allocations: 1573)
+
+
+Started GET "/api/v1/games/9" for 99.240.133.107 at 2023-07-31 02:53:18 +0000
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mGame Load (67.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:41:in `show'
+  [1m[36mGameSetting Load (67.3ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:44:in `show'
+  [1m[36mQuestion Load (67.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 9]]
+  ↳ app/controllers/api/v1/games_controller.rb:42:in `show'
+Completed 200 OK in 567ms (Views: 7.7ms | ActiveRecord: 479.8ms | Allocations: 10223)
+
+
+Started DELETE "/api/v1/games/9" for 99.240.133.107 at 2023-07-31 02:53:24 +0000
+Processing by Api::V1::GamesController#destroy as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mGame Load (67.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:54:in `destroy'
+  [1m[36mTRANSACTION (67.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGameSetting Load (67.3ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGameSetting Destroy (67.6ms)[0m  [1m[31mDELETE FROM "game_settings" WHERE "game_settings"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Load (67.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 9]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.4ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 72]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (70.7ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 75]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.7ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 78]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.5ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 81]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.5ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 84]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.6ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 87]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.6ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 89]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.8ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 91]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.5ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 93]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.6ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 95]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (68.0ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 97]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.6ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 98]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGame Destroy (68.5ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mTRANSACTION (70.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+Completed 200 OK in 1390ms (Views: 0.2ms | ActiveRecord: 1290.1ms | Allocations: 13392)
+
+
+Started DELETE "/api/v1/games/9" for 99.240.133.107 at 2023-07-31 02:53:26 +0000
+Processing by Api::V1::GamesController#destroy as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mGame Load (78.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:54:in `destroy'
+Completed 404 Not Found in 147ms (Views: 0.2ms | ActiveRecord: 78.0ms | Allocations: 573)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 02:53:42 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.7ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 138ms (Views: 2.5ms | ActiveRecord: 67.7ms | Allocations: 1480)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 02:53:42 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 138ms (Views: 2.7ms | ActiveRecord: 67.6ms | Allocations: 1480)
+
+
+Started GET "/api/v1/games/8" for 99.240.133.107 at 2023-07-31 02:53:43 +0000
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (67.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:41:in `show'
+  [1m[36mGameSetting Load (67.5ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:44:in `show'
+  [1m[36mQuestion Load (67.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 8]]
+  ↳ app/controllers/api/v1/games_controller.rb:42:in `show'
+Completed 200 OK in 277ms (Views: 3.6ms | ActiveRecord: 202.3ms | Allocations: 3337)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 02:54:01 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (69.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (69.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 365ms (Views: 8.2ms | ActiveRecord: 345.3ms | Allocations: 10012)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 02:54:04 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.4ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 137ms (Views: 2.2ms | ActiveRecord: 67.4ms | Allocations: 1494)
+
+
+Started DELETE "/api/v1/games/8" for 99.240.133.107 at 2023-07-31 02:54:09 +0000
+Processing by Api::V1::GamesController#destroy as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (67.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:54:in `destroy'
+  [1m[36mTRANSACTION (67.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGameSetting Load (86.4ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGameSetting Destroy (67.5ms)[0m  [1m[31mDELETE FROM "game_settings" WHERE "game_settings"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Load (68.7ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 8]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.7ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 69]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (68.0ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 71]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (72.9ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 74]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.6ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 77]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.6ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 80]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.6ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 83]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.6ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 86]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.7ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 88]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (69.9ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 90]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.6ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 92]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.7ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 94]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.7ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 96]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGame Destroy (68.6ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mTRANSACTION (68.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+Completed 200 OK in 2034ms (Views: 0.2ms | ActiveRecord: 1659.6ms | Allocations: 26921)
+
+
+Started DELETE "/api/v1/games/8" for 99.240.133.107 at 2023-07-31 02:54:11 +0000
+Processing by Api::V1::GamesController#destroy as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (67.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:54:in `destroy'
+Completed 404 Not Found in 137ms (Views: 0.2ms | ActiveRecord: 67.6ms | Allocations: 592)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 02:54:56 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.9ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 138ms (Views: 2.4ms | ActiveRecord: 67.9ms | Allocations: 1396)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 02:54:56 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.5ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 137ms (Views: 2.2ms | ActiveRecord: 67.5ms | Allocations: 1385)
+
+
+Started DELETE "/api/v1/games/7" for 99.240.133.107 at 2023-07-31 02:55:00 +0000
+Processing by Api::V1::GamesController#destroy as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mGame Load (67.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:54:in `destroy'
+  [1m[36mTRANSACTION (67.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGameSetting Load (67.6ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGameSetting Destroy (67.8ms)[0m  [1m[31mDELETE FROM "game_settings" WHERE "game_settings"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Load (67.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 7]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.5ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 62]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.6ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 64]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.6ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 66]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.5ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 67]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.7ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 68]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.6ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 70]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.6ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 73]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.6ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 76]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.6ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 79]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.7ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 82]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (75.0ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 85]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGame Destroy (68.6ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mTRANSACTION (68.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+Completed 200 OK in 1320ms (Views: 0.2ms | ActiveRecord: 1225.4ms | Allocations: 12386)
+
+
+Started DELETE "/api/v1/games/7" for 99.240.133.107 at 2023-07-31 02:55:01 +0000
+Processing by Api::V1::GamesController#destroy as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mGame Load (67.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:54:in `destroy'
+Completed 404 Not Found in 141ms (Views: 0.2ms | ActiveRecord: 67.6ms | Allocations: 588)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 02:55:03 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.8ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 138ms (Views: 3.0ms | ActiveRecord: 67.8ms | Allocations: 1289)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 02:55:03 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.5ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 137ms (Views: 1.9ms | ActiveRecord: 67.5ms | Allocations: 1289)
+
+
+Started DELETE "/api/v1/games/6" for 99.240.133.107 at 2023-07-31 02:55:06 +0000
+Processing by Api::V1::GamesController#destroy as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mGame Load (67.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:54:in `destroy'
+  [1m[36mTRANSACTION (67.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGameSetting Load (80.6ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGameSetting Destroy (67.7ms)[0m  [1m[31mDELETE FROM "game_settings" WHERE "game_settings"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Load (67.6ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 6]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.7ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 53]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.5ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 54]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (73.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 55]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.8ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 56]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.7ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 57]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.7ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 58]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.5ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 59]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.8ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 60]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.6ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 61]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.6ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 63]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.8ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 65]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGame Destroy (68.4ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mTRANSACTION (68.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+Completed 200 OK in 1333ms (Views: 0.2ms | ActiveRecord: 1237.8ms | Allocations: 12389)
+
+
+Started DELETE "/api/v1/games/6" for 99.240.133.107 at 2023-07-31 02:55:08 +0000
+Processing by Api::V1::GamesController#destroy as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mGame Load (67.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:54:in `destroy'
+Completed 404 Not Found in 137ms (Views: 0.2ms | ActiveRecord: 67.6ms | Allocations: 565)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 02:55:09 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 137ms (Views: 2.0ms | ActiveRecord: 67.6ms | Allocations: 1194)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 02:55:09 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.7ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 137ms (Views: 1.9ms | ActiveRecord: 67.7ms | Allocations: 1194)
+
+
+Started DELETE "/api/v1/games/5" for 99.240.133.107 at 2023-07-31 02:55:26 +0000
+Processing by Api::V1::GamesController#destroy as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mGame Load (77.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:54:in `destroy'
+  [1m[36mTRANSACTION (67.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGameSetting Load (67.8ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGameSetting Destroy (67.9ms)[0m  [1m[31mDELETE FROM "game_settings" WHERE "game_settings"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Load (80.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 5]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.9ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 40]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.5ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 42]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.7ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 44]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.7ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 45]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.7ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 46]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.6ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 47]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.7ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 48]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.8ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 49]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.7ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 50]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.6ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 51]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (67.7ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 52]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGame Destroy (81.9ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mTRANSACTION (68.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+Completed 200 OK in 1353ms (Views: 0.2ms | ActiveRecord: 1256.4ms | Allocations: 12387)
+
+
+Started DELETE "/api/v1/games/5" for 99.240.133.107 at 2023-07-31 02:55:27 +0000
+Processing by Api::V1::GamesController#destroy as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mGame Load (67.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:54:in `destroy'
+Completed 404 Not Found in 136ms (Views: 0.2ms | ActiveRecord: 67.3ms | Allocations: 565)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 02:59:26 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.8ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 141ms (Views: 2.1ms | ActiveRecord: 67.8ms | Allocations: 1099)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 02:59:26 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 137ms (Views: 2.1ms | ActiveRecord: 67.6ms | Allocations: 1100)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 02:59:29 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 138ms (Views: 2.2ms | ActiveRecord: 67.6ms | Allocations: 1102)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 02:59:29 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 138ms (Views: 2.1ms | ActiveRecord: 67.6ms | Allocations: 1099)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 02:59:37 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.8ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 137ms (Views: 1.8ms | ActiveRecord: 67.8ms | Allocations: 1102)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 02:59:37 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.7ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 138ms (Views: 1.8ms | ActiveRecord: 67.7ms | Allocations: 1099)
+
+
