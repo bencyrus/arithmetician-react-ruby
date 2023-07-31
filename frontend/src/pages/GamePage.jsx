@@ -4,7 +4,6 @@ import { ClipLoader } from 'react-spinners'
 import GameContext from '../context/GameContext'
 import Question from '../components/Question'
 import Timer from '../components/Timer'
-import useSubmitGame from '../hooks/useSubmitGame'
 
 const GamePage = () => {
 	const {
@@ -19,6 +18,7 @@ const GamePage = () => {
 
 	const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
 	const [answeredQuestions, setAnsweredQuestions] = useState([])
+	const [isLoading, setIsLoading] = useState(false)
 	const navigate = useNavigate()
 
 	const requestBody = {
@@ -30,22 +30,25 @@ const GamePage = () => {
 		answeredQuestions,
 	}
 
-	const onSubmitSuccess = (data) => {
-		setQuestions([])
-		setCurrentQuestionIndex(0)
-		setAnsweredQuestions([])
-		navigate('/score')
-	}
+	const submitGame = () => {
+		setIsLoading(true)
 
-	const onSubmitError = (error) => {
-		console.error('Error:', error)
+		fetch('/api/v1/games', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify(requestBody),
+		})
+			.then((res) => res.json())
+			.then((data) => {
+				setQuestions([])
+				setCurrentQuestionIndex(0)
+				setAnsweredQuestions([])
+				navigate('/score')
+			})
+			.catch((err) => console.log(err))
 	}
-
-	const { isLoading, submitGame } = useSubmitGame(
-		requestBody,
-		onSubmitSuccess,
-		onSubmitError
-	)
 
 	const handleCorrectAnswer = () => {
 		setScore((s) => s + 1)
