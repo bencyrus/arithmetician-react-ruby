@@ -1,22 +1,17 @@
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import useFetch from './useFetch'
 
 const useQuestions = (settings, onSuccess, onError) => {
-	const { response, error, isLoading, fetchData } = useFetch()
-	const [shouldFetch, setShouldFetch] = useState(false)
-
-	useEffect(() => {
-		if (shouldFetch) {
-			fetchData('/api/v1/questions', {
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json',
-				},
-				body: JSON.stringify(settings),
-			})
-			setShouldFetch(false)
+	const { response, error, isLoading, fetchData } = useFetch(
+		'/api/v1/questions',
+		{
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify(settings),
 		}
-	}, [settings, fetchData, shouldFetch])
+	)
 
 	useEffect(() => {
 		if (response && !error) {
@@ -26,9 +21,7 @@ const useQuestions = (settings, onSuccess, onError) => {
 		}
 	}, [response, error, onSuccess, onError])
 
-	const doFetch = () => setShouldFetch(true)
-
-	return { isLoading, fetchQuestions: doFetch }
+	return { isLoading, fetchQuestions: fetchData }
 }
 
 export default useQuestions
