@@ -41,7 +41,11 @@ const GamePage = () => {
 		console.error('Error:', error)
 	}
 
-	const { isLoading, submitGame } = useSubmitGame(requestBody, onSubmitSuccess, onSubmitError)
+	const { isLoading, submitGame } = useSubmitGame(
+		requestBody,
+		onSubmitSuccess,
+		onSubmitError
+	)
 
 	const handleCorrectAnswer = () => {
 		setScore((s) => s + 1)
