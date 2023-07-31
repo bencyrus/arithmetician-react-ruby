@@ -9129,3 +9129,82 @@ Processing by Api::V1::GamesController#index as */*
 Completed 200 OK in 137ms (Views: 2.6ms | ActiveRecord: 67.2ms | Allocations: 1669)
 
 
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 04:38:13 +0000
+Processing by Api::V1::GamesController#index as */*
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 04:38:33 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (69.3ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 2039ms (Views: 2.5ms | ActiveRecord: 956.8ms | Allocations: 4513)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 04:38:51 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 138ms (Views: 2.9ms | ActiveRecord: 67.2ms | Allocations: 1670)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 04:38:51 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 137ms (Views: 2.3ms | ActiveRecord: 67.6ms | Allocations: 1676)
+
+
+Started GET "/api/v1/games/24" for 99.240.133.107 at 2023-07-31 04:38:54 +0000
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"24"}
+  [1m[36mGame Load (67.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:41:in `show'
+  [1m[36mGameSetting Load (67.8ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:44:in `show'
+  [1m[36mQuestion Load (67.9ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 24]]
+  ↳ app/controllers/api/v1/games_controller.rb:42:in `show'
+Completed 200 OK in 1539ms (Views: 77.4ms | ActiveRecord: 551.2ms | Allocations: 20700)
+
+
+Started GET "/api/v1/games/23" for 99.240.133.107 at 2023-07-31 04:38:58 +0000
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"23"}
+  [1m[36mGame Load (67.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:41:in `show'
+  [1m[36mGameSetting Load (67.4ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:44:in `show'
+  [1m[36mQuestion Load (67.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 23]]
+  ↳ app/controllers/api/v1/games_controller.rb:42:in `show'
+Completed 200 OK in 277ms (Views: 3.7ms | ActiveRecord: 202.1ms | Allocations: 3338)
+
+
+Started GET "/api/v1/games/22" for 99.240.133.107 at 2023-07-31 04:39:02 +0000
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"22"}
+  [1m[36mGame Load (67.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:41:in `show'
+  [1m[36mGameSetting Load (67.6ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:44:in `show'
+  [1m[36mQuestion Load (67.6ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 22]]
+  ↳ app/controllers/api/v1/games_controller.rb:42:in `show'
+Completed 200 OK in 278ms (Views: 4.4ms | ActiveRecord: 202.8ms | Allocations: 3338)
+
+
+Started POST "/api/v1/questions" for 99.240.133.107 at 2023-07-31 04:39:06 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "question"=>{}}
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 3078)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 04:39:12 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.4ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 138ms (Views: 2.9ms | ActiveRecord: 67.4ms | Allocations: 1669)
+
+
+Started GET "/api/v1/games" for 99.240.133.107 at 2023-07-31 04:39:13 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.8ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 148ms (Views: 12.1ms | ActiveRecord: 67.8ms | Allocations: 1669)
+
+
