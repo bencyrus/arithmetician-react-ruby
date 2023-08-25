@@ -3,7 +3,7 @@ import useFetch from './useFetch'
 
 const useQuestions = (settings, onSuccess, onError) => {
 	const { response, error, isLoading, fetchData } = useFetch(
-		'/api/v1/questions',
+		'/api/questions',
 		{
 			method: 'POST',
 			headers: {

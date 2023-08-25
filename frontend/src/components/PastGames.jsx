@@ -13,7 +13,7 @@ const PastGames = () => {
 	useEffect(() => {
 		setIsLoading(true)
 
-		fetch('/api/v1/games')
+		fetch('/api/games')
 			.then((res) => res.json())
 			.then((data) => {
 				setPastGames(data)

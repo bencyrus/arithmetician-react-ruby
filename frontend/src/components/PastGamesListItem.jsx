@@ -11,7 +11,7 @@ const PastGamesListItem = ({ game, onDelete }) => {
 		if (isOpen) {
 			setIsLoading(true)
 
-			fetch(`/api/v1/games/${game.id}`)
+			fetch(`/api/games/${game.id}`)
 				.then((res) => res.json())
 				.then((data) => {
 					setGameDetails(data)
@@ -26,7 +26,7 @@ const PastGamesListItem = ({ game, onDelete }) => {
 	}
 
 	const handleDelete = () => {
-		fetch(`/api/v1/games/${game.id}`, {
+		fetch(`/api/games/${game.id}`, {
 			method: 'DELETE',
 		})
 			.then((res) => res.json())

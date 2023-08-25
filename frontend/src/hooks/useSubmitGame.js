@@ -2,16 +2,13 @@ import { useEffect, useCallback } from 'react'
 import useFetch from './useFetch'
 
 const useSubmitGame = (gameData, onSuccess, onError) => {
-	const { response, error, isLoading, fetchData } = useFetch(
-		'/api/v1/games',
-		{
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify(gameData),
-		}
-	)
+	const { response, error, isLoading, fetchData } = useFetch('/api/games', {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+		},
+		body: JSON.stringify(gameData),
+	})
 
 	const submitGame = useCallback(() => {
 		fetchData()

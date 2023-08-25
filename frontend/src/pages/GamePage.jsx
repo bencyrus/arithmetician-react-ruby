@@ -33,7 +33,7 @@ const GamePage = () => {
 	const submitGame = () => {
 		setIsLoading(true)
 
-		fetch('/api/v1/games', {
+		fetch('/api/games', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
