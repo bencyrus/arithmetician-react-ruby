@@ -10929,3 +10929,1226 @@ Processing by Api::V1::GamesController#destroy as */*
 Completed 200 OK in 1305ms (Views: 0.2ms | ActiveRecord: 1204.6ms | Allocations: 13116)
 
 
+Started GET "/api/v1/games" for 69.158.246.3 at 2023-08-01 03:21:34 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (68.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (68.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 220ms (Views: 2.2ms | ActiveRecord: 202.8ms | Allocations: 5809)
+
+
+Started GET "/api/v1/games" for 69.158.246.3 at 2023-08-01 03:21:37 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (66.5ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 134ms (Views: 1.3ms | ActiveRecord: 66.5ms | Allocations: 726)
+
+
+Started GET "/api/v1/games" for 69.158.246.3 at 2023-08-01 03:22:51 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (66.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 138ms (Views: 1.9ms | ActiveRecord: 66.6ms | Allocations: 723)
+
+
+Started GET "/api/v1/games" for 69.158.246.3 at 2023-08-01 03:22:51 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (66.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 135ms (Views: 1.4ms | ActiveRecord: 66.6ms | Allocations: 711)
+
+
+Started GET "/api/v1/games" for 69.158.246.3 at 2023-08-01 03:23:03 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (66.5ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 135ms (Views: 1.4ms | ActiveRecord: 66.5ms | Allocations: 723)
+
+
+Started GET "/api/v1/games" for 69.158.246.3 at 2023-08-01 03:23:03 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (66.4ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 135ms (Views: 1.6ms | ActiveRecord: 66.4ms | Allocations: 711)
+
+
+Started GET "/api/v1/games" for 69.158.246.3 at 2023-08-01 03:25:06 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (66.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 138ms (Views: 1.3ms | ActiveRecord: 66.6ms | Allocations: 724)
+
+
+Started GET "/api/v1/games" for 69.158.246.3 at 2023-08-01 03:25:07 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (66.5ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 136ms (Views: 2.4ms | ActiveRecord: 66.5ms | Allocations: 711)
+
+
+Started POST "/api/v1/questions" for 69.158.246.3 at 2023-08-01 03:25:26 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "question"=>{}}
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 135.5ms | Allocations: 3251)
+
+
+Started POST "/api/v1/games" for 69.158.246.3 at 2023-08-01 03:26:00 +0000
+Started POST "/api/v1/games" for 69.158.246.3 at 2023-08-01 03:26:00 +0000
+Started POST "/api/v1/games" for 69.158.246.3 at 2023-08-01 03:26:00 +0000
+Processing by Api::V1::GamesController#create as */*
+  Parameters: {"score"=>9, "endTimestamp"=>"2023-08-01T03:25:58.175Z", "additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "answeredQuestions"=>[{"num1"=>5, "num2"=>11, "opType"=>"*", "answer"=>55}, {"num1"=>6, "num2"=>10, "opType"=>"*", "answer"=>60}, {"num1"=>12, "num2"=>5, "opType"=>"*", "answer"=>60}, {"num1"=>7, "num2"=>48, "opType"=>"+", "answer"=>55}, {"num1"=>71, "num2"=>65, "opType"=>"-", "answer"=>6}, {"num1"=>9, "num2"=>5, "opType"=>"*", "answer"=>45}, {"num1"=>80, "num2"=>8, "opType"=>"/", "answer"=>10}, {"num1"=>88, "num2"=>8, "opType"=>"/", "answer"=>11}, {"num1"=>84, "num2"=>7, "opType"=>"/", "answer"=>12}], "game"=>{"score"=>9, "endTimestamp"=>"2023-08-01T03:25:58.175Z", "additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "answeredQuestions"=>[{"num1"=>5, "num2"=>11, "opType"=>"*", "answer"=>55}, {"num1"=>6, "num2"=>10, "opType"=>"*", "answer"=>60}, {"num1"=>12, "num2"=>5, "opType"=>"*", "answer"=>60}, {"num1"=>7, "num2"=>48, "opType"=>"+", "answer"=>55}, {"num1"=>71, "num2"=>65, "opType"=>"-", "answer"=>6}, {"num1"=>9, "num2"=>5, "opType"=>"*", "answer"=>45}, {"num1"=>80, "num2"=>8, "opType"=>"/", "answer"=>10}, {"num1"=>88, "num2"=>8, "opType"=>"/", "answer"=>11}, {"num1"=>84, "num2"=>7, "opType"=>"/", "answer"=>12}]}}
+Processing by Api::V1::GamesController#create as */*
+  Parameters: {"score"=>10, "endTimestamp"=>"2023-08-01T03:26:00.286Z", "additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "answeredQuestions"=>[{"num1"=>5, "num2"=>11, "opType"=>"*", "answer"=>55}, {"num1"=>6, "num2"=>10, "opType"=>"*", "answer"=>60}, {"num1"=>12, "num2"=>5, "opType"=>"*", "answer"=>60}, {"num1"=>7, "num2"=>48, "opType"=>"+", "answer"=>55}, {"num1"=>71, "num2"=>65, "opType"=>"-", "answer"=>6}, {"num1"=>9, "num2"=>5, "opType"=>"*", "answer"=>45}, {"num1"=>80, "num2"=>8, "opType"=>"/", "answer"=>10}, {"num1"=>88, "num2"=>8, "opType"=>"/", "answer"=>11}, {"num1"=>84, "num2"=>7, "opType"=>"/", "answer"=>12}, {"num1"=>16, "num2"=>4, "opType"=>"/", "answer"=>4}], "game"=>{"score"=>10, "endTimestamp"=>"2023-08-01T03:26:00.286Z", "additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "answeredQuestions"=>[{"num1"=>5, "num2"=>11, "opType"=>"*", "answer"=>55}, {"num1"=>6, "num2"=>10, "opType"=>"*", "answer"=>60}, {"num1"=>12, "num2"=>5, "opType"=>"*", "answer"=>60}, {"num1"=>7, "num2"=>48, "opType"=>"+", "answer"=>55}, {"num1"=>71, "num2"=>65, "opType"=>"-", "answer"=>6}, {"num1"=>9, "num2"=>5, "opType"=>"*", "answer"=>45}, {"num1"=>80, "num2"=>8, "opType"=>"/", "answer"=>10}, {"num1"=>88, "num2"=>8, "opType"=>"/", "answer"=>11}, {"num1"=>84, "num2"=>7, "opType"=>"/", "answer"=>12}, {"num1"=>16, "num2"=>4, "opType"=>"/", "answer"=>4}]}}
+Processing by Api::V1::GamesController#create as */*
+  Parameters: {"score"=>9, "endTimestamp"=>"2023-08-01T03:26:00.191Z", "additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "answeredQuestions"=>[{"num1"=>5, "num2"=>11, "opType"=>"*", "answer"=>55}, {"num1"=>6, "num2"=>10, "opType"=>"*", "answer"=>60}, {"num1"=>12, "num2"=>5, "opType"=>"*", "answer"=>60}, {"num1"=>7, "num2"=>48, "opType"=>"+", "answer"=>55}, {"num1"=>71, "num2"=>65, "opType"=>"-", "answer"=>6}, {"num1"=>9, "num2"=>5, "opType"=>"*", "answer"=>45}, {"num1"=>80, "num2"=>8, "opType"=>"/", "answer"=>10}, {"num1"=>88, "num2"=>8, "opType"=>"/", "answer"=>11}, {"num1"=>84, "num2"=>7, "opType"=>"/", "answer"=>12}], "game"=>{"score"=>9}}
+  [1m[36mTRANSACTION (66.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:8:in `create'
+  [1m[36mGame Create (67.0ms)[0m  [1m[32mINSERT INTO "games" ("score", "end_timestamp", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["score", 9], ["end_timestamp", "2023-08-01 03:26:00.191000"], ["created_at", "2023-08-01 03:26:00.714540"], ["updated_at", "2023-08-01 03:26:00.714540"]]
+  ↳ app/controllers/api/v1/games_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (67.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (66.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mGameSetting Load (67.2ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mGameSetting Create (67.5ms)[0m  [1m[32mINSERT INTO "game_settings" ("game_id", "addition_range_start", "addition_range_end", "multiplication_range_start", "multiplication_range_end", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["game_id", 1], ["addition_range_start", 2], ["addition_range_end", 100], ["multiplication_range_start", 2], ["multiplication_range_end", 12], ["duration", 30], ["created_at", "2023-08-01 03:26:01.362133"], ["updated_at", "2023-08-01 03:26:01.362133"]]
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (67.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (66.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (67.4ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 1], ["num1", 5], ["num2", 11], ["op_type", "*"], ["answer", 55], ["created_at", "2023-08-01 03:26:01.576669"], ["updated_at", "2023-08-01 03:26:01.576669"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (67.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (66.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (66.7ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 1], ["num1", 6], ["num2", 10], ["op_type", "*"], ["answer", 60], ["created_at", "2023-08-01 03:26:01.781515"], ["updated_at", "2023-08-01 03:26:01.781515"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (67.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (66.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:8:in `create'
+  [1m[36mQuestion Create (66.8ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 1], ["num1", 12], ["num2", 5], ["op_type", "*"], ["answer", 60], ["created_at", "2023-08-01 03:26:01.985175"], ["updated_at", "2023-08-01 03:26:01.985175"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mGame Create (63.5ms)[0m  [1m[32mINSERT INTO "games" ("score", "end_timestamp", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["score", 9], ["end_timestamp", "2023-08-01 03:25:58.175000"], ["created_at", "2023-08-01 03:26:02.029916"], ["updated_at", "2023-08-01 03:26:02.029916"]]
+  ↳ app/controllers/api/v1/games_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (65.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (67.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (63.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:8:in `create'
+  [1m[36mGame Create (67.0ms)[0m  [1m[32mINSERT INTO "games" ("score", "end_timestamp", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["score", 10], ["end_timestamp", "2023-08-01 03:26:00.286000"], ["created_at", "2023-08-01 03:26:02.112965"], ["updated_at", "2023-08-01 03:26:02.112965"]]
+  ↳ app/controllers/api/v1/games_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (66.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (66.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:8:in `create'
+  [1m[36mQuestion Create (66.7ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 1], ["num1", 7], ["num2", 48], ["op_type", "+"], ["answer", 55], ["created_at", "2023-08-01 03:26:02.188966"], ["updated_at", "2023-08-01 03:26:02.188966"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (65.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (67.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (66.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mGameSetting Load (63.3ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mQuestion Create (66.6ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 1], ["num1", 71], ["num2", 65], ["op_type", "-"], ["answer", 6], ["created_at", "2023-08-01 03:26:02.392279"], ["updated_at", "2023-08-01 03:26:02.392279"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mGameSetting Create (63.3ms)[0m  [1m[32mINSERT INTO "game_settings" ("game_id", "addition_range_start", "addition_range_end", "multiplication_range_start", "multiplication_range_end", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["game_id", 2], ["addition_range_start", 2], ["addition_range_end", 100], ["multiplication_range_start", 2], ["multiplication_range_end", 12], ["duration", 30], ["created_at", "2023-08-01 03:26:02.481550"], ["updated_at", "2023-08-01 03:26:02.481550"]]
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mGameSetting Load (66.8ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (67.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (63.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mGameSetting Create (67.0ms)[0m  [1m[32mINSERT INTO "game_settings" ("game_id", "addition_range_start", "addition_range_end", "multiplication_range_start", "multiplication_range_end", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["game_id", 3], ["addition_range_start", 2], ["addition_range_end", 100], ["multiplication_range_start", 2], ["multiplication_range_end", 12], ["duration", 30], ["created_at", "2023-08-01 03:26:02.583049"], ["updated_at", "2023-08-01 03:26:02.583049"]]
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (66.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (67.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mQuestion Create (66.8ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 1], ["num1", 9], ["num2", 5], ["op_type", "*"], ["answer", 45], ["created_at", "2023-08-01 03:26:02.597280"], ["updated_at", "2023-08-01 03:26:02.597280"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (63.7ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 2], ["num1", 5], ["num2", 11], ["op_type", "*"], ["answer", 55], ["created_at", "2023-08-01 03:26:02.610680"], ["updated_at", "2023-08-01 03:26:02.610680"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (65.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (68.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (63.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (67.2ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 3], ["num1", 5], ["num2", 11], ["op_type", "*"], ["answer", 55], ["created_at", "2023-08-01 03:26:02.720908"], ["updated_at", "2023-08-01 03:26:02.720908"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (66.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (66.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (62.8ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 2], ["num1", 6], ["num2", 10], ["op_type", "*"], ["answer", 60], ["created_at", "2023-08-01 03:26:02.803451"], ["updated_at", "2023-08-01 03:26:02.803451"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (66.4ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 1], ["num1", 80], ["num2", 8], ["op_type", "/"], ["answer", 10], ["created_at", "2023-08-01 03:26:02.801795"], ["updated_at", "2023-08-01 03:26:02.801795"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (65.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (63.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (67.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (66.4ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 3], ["num1", 6], ["num2", 10], ["op_type", "*"], ["answer", 60], ["created_at", "2023-08-01 03:26:02.924398"], ["updated_at", "2023-08-01 03:26:02.924398"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (66.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (62.9ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 2], ["num1", 12], ["num2", 5], ["op_type", "*"], ["answer", 60], ["created_at", "2023-08-01 03:26:02.995085"], ["updated_at", "2023-08-01 03:26:02.995085"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (66.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (66.5ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 1], ["num1", 88], ["num2", 8], ["op_type", "/"], ["answer", 11], ["created_at", "2023-08-01 03:26:03.004952"], ["updated_at", "2023-08-01 03:26:03.004952"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (63.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (65.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (67.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (66.3ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 3], ["num1", 12], ["num2", 5], ["op_type", "*"], ["answer", 60], ["created_at", "2023-08-01 03:26:03.128582"], ["updated_at", "2023-08-01 03:26:03.128582"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (66.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (62.6ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 2], ["num1", 7], ["num2", 48], ["op_type", "+"], ["answer", 55], ["created_at", "2023-08-01 03:26:03.187569"], ["updated_at", "2023-08-01 03:26:03.187569"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (66.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (66.7ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 1], ["num1", 84], ["num2", 7], ["op_type", "/"], ["answer", 12], ["created_at", "2023-08-01 03:26:03.208544"], ["updated_at", "2023-08-01 03:26:03.208544"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (63.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (65.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (67.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+Completed 201 Created in 2779ms (Views: 0.4ms | ActiveRecord: 2613.3ms | Allocations: 70433)
+
+
+  [1m[36mTRANSACTION (62.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (66.4ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 3], ["num1", 7], ["num2", 48], ["op_type", "+"], ["answer", 55], ["created_at", "2023-08-01 03:26:03.331311"], ["updated_at", "2023-08-01 03:26:03.331311"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (62.7ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 2], ["num1", 71], ["num2", 65], ["op_type", "-"], ["answer", 6], ["created_at", "2023-08-01 03:26:03.379606"], ["updated_at", "2023-08-01 03:26:03.379606"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (66.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (63.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (65.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (66.4ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 3], ["num1", 71], ["num2", 65], ["op_type", "-"], ["answer", 6], ["created_at", "2023-08-01 03:26:03.535260"], ["updated_at", "2023-08-01 03:26:03.535260"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (62.8ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 2], ["num1", 9], ["num2", 5], ["op_type", "*"], ["answer", 45], ["created_at", "2023-08-01 03:26:03.574922"], ["updated_at", "2023-08-01 03:26:03.574922"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (66.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (63.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (65.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (66.7ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 3], ["num1", 9], ["num2", 5], ["op_type", "*"], ["answer", 45], ["created_at", "2023-08-01 03:26:03.738601"], ["updated_at", "2023-08-01 03:26:03.738601"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (62.8ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 2], ["num1", 80], ["num2", 8], ["op_type", "/"], ["answer", 10], ["created_at", "2023-08-01 03:26:03.766528"], ["updated_at", "2023-08-01 03:26:03.766528"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (67.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (63.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (65.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (66.1ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 3], ["num1", 80], ["num2", 8], ["op_type", "/"], ["answer", 10], ["created_at", "2023-08-01 03:26:03.941940"], ["updated_at", "2023-08-01 03:26:03.941940"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (65.7ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 2], ["num1", 88], ["num2", 8], ["op_type", "/"], ["answer", 11], ["created_at", "2023-08-01 03:26:03.958345"], ["updated_at", "2023-08-01 03:26:03.958345"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (66.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (63.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (65.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (65.9ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 3], ["num1", 88], ["num2", 8], ["op_type", "/"], ["answer", 11], ["created_at", "2023-08-01 03:26:04.145037"], ["updated_at", "2023-08-01 03:26:04.145037"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (62.6ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 2], ["num1", 84], ["num2", 7], ["op_type", "/"], ["answer", 12], ["created_at", "2023-08-01 03:26:04.153433"], ["updated_at", "2023-08-01 03:26:04.153433"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (63.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+Completed 201 Created in 3778ms (Views: 0.4ms | ActiveRecord: 3026.8ms | Allocations: 93202)
+
+
+  [1m[36mTRANSACTION (66.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (65.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (66.2ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 3], ["num1", 84], ["num2", 7], ["op_type", "/"], ["answer", 12], ["created_at", "2023-08-01 03:26:04.348629"], ["updated_at", "2023-08-01 03:26:04.348629"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (67.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (66.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (66.2ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 3], ["num1", 16], ["num2", 4], ["op_type", "/"], ["answer", 4], ["created_at", "2023-08-01 03:26:04.551657"], ["updated_at", "2023-08-01 03:26:04.551657"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (66.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+Completed 201 Created in 4185ms (Views: 0.3ms | ActiveRecord: 3391.7ms | Allocations: 96647)
+
+
+Started GET "/api/v1/games" for 69.158.246.3 at 2023-08-01 03:26:08 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.3ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 136ms (Views: 2.7ms | ActiveRecord: 67.3ms | Allocations: 1040)
+
+
+Started GET "/api/v1/games" for 69.158.246.3 at 2023-08-01 03:26:09 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (66.1ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 134ms (Views: 1.8ms | ActiveRecord: 66.1ms | Allocations: 1004)
+
+
+Started GET "/api/v1/games/3" for 69.158.246.3 at 2023-08-01 03:26:17 +0000
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mGame Load (66.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:41:in `show'
+  [1m[36mGameSetting Load (66.1ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:44:in `show'
+  [1m[36mQuestion Load (66.7ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 3]]
+  ↳ app/controllers/api/v1/games_controller.rb:42:in `show'
+Completed 200 OK in 404ms (Views: 69.7ms | ActiveRecord: 198.9ms | Allocations: 3574)
+
+
+Started GET "/api/v1/games/3" for 69.158.246.3 at 2023-08-01 03:26:19 +0000
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mGame Load (66.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:41:in `show'
+  [1m[36mGameSetting Load (66.4ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:44:in `show'
+  [1m[36mQuestion Load (66.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 3]]
+  ↳ app/controllers/api/v1/games_controller.rb:42:in `show'
+Completed 200 OK in 272ms (Views: 4.1ms | ActiveRecord: 199.0ms | Allocations: 3135)
+
+
+Started GET "/api/v1/games/3" for 69.158.246.3 at 2023-08-01 03:26:26 +0000
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mGame Load (66.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:41:in `show'
+  [1m[36mGameSetting Load (66.3ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:44:in `show'
+  [1m[36mQuestion Load (66.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 3]]
+  ↳ app/controllers/api/v1/games_controller.rb:42:in `show'
+Completed 200 OK in 273ms (Views: 5.2ms | ActiveRecord: 198.9ms | Allocations: 3133)
+
+
+Started DELETE "/api/v1/games/3" for 69.158.246.3 at 2023-08-01 03:26:26 +0000
+Processing by Api::V1::GamesController#destroy as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mGame Load (66.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:54:in `destroy'
+  [1m[36mTRANSACTION (66.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGameSetting Load (66.6ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGameSetting Destroy (66.3ms)[0m  [1m[31mDELETE FROM "game_settings" WHERE "game_settings"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Load (66.7ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 3]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (66.4ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (66.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (66.4ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 14]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (66.1ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 17]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (66.2ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 19]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (66.4ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 21]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (66.5ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 23]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (66.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 25]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (66.5ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 27]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (66.2ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 28]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGame Destroy (67.4ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mTRANSACTION (66.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+Completed 200 OK in 1221ms (Views: 0.2ms | ActiveRecord: 1129.7ms | Allocations: 11842)
+
+
+Started GET "/" for 10.240.1.190 at 2023-08-19 14:03:25 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (70.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/rvm/gems/ruby-3.2.2/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-3.2.2/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 12.9ms | Allocations: 634)
+Completed 200 OK in 73ms (Views: 27.0ms | ActiveRecord: 0.0ms | Allocations: 7144)
+
+
+Started GET "/api/v1/games" for 10.240.1.190 at 2023-08-19 14:03:37 +0000
+Processing by Api::V1::GamesController#index as HTML
+  [1m[36mGame Load (68.0ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 450ms (Views: 37.6ms | ActiveRecord: 341.5ms | Allocations: 7393)
+
+
+Started GET "/favicon.ico" for 10.240.1.190 at 2023-08-19 14:03:38 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/games/2" for 10.240.1.190 at 2023-08-19 14:04:56 +0000
+Processing by Api::V1::GamesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mGame Load (66.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:41:in `show'
+  [1m[36mGameSetting Load (67.4ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:44:in `show'
+  [1m[36mQuestion Load (67.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 2]]
+  ↳ app/controllers/api/v1/games_controller.rb:42:in `show'
+Completed 200 OK in 837ms (Views: 73.2ms | ActiveRecord: 542.9ms | Allocations: 17350)
+
+
+Started GET "/api/v1/games" for 10.240.1.190 at 2023-08-19 14:05:44 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (66.7ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 135ms (Views: 1.3ms | ActiveRecord: 66.7ms | Allocations: 914)
+
+
+Started GET "/api/v1/games" for 10.240.1.190 at 2023-08-19 14:05:45 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (66.7ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 135ms (Views: 1.8ms | ActiveRecord: 66.7ms | Allocations: 913)
+
+
+Started GET "/api/v1/games" for 10.240.1.190 at 2023-08-19 14:05:45 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (66.9ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 136ms (Views: 1.8ms | ActiveRecord: 66.9ms | Allocations: 909)
+
+
+Started GET "/api/v1/games" for 10.240.1.190 at 2023-08-19 14:05:45 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (66.8ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 135ms (Views: 1.3ms | ActiveRecord: 66.8ms | Allocations: 921)
+
+
+Started GET "/api/v1/games" for 10.240.1.190 at 2023-08-19 14:05:48 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (66.7ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 135ms (Views: 1.4ms | ActiveRecord: 66.7ms | Allocations: 909)
+
+
+Started GET "/api/v1/games" for 10.240.1.190 at 2023-08-19 14:05:49 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.0ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 135ms (Views: 1.3ms | ActiveRecord: 67.0ms | Allocations: 923)
+
+
+Started GET "/api/v1/games/1" for 10.240.1.190 at 2023-08-19 14:05:58 +0000
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (66.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:41:in `show'
+  [1m[36mGameSetting Load (67.1ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:44:in `show'
+  [1m[36mQuestion Load (66.6ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:42:in `show'
+Completed 200 OK in 273ms (Views: 2.5ms | ActiveRecord: 200.6ms | Allocations: 3032)
+
+
+Started GET "/api/v1/games" for 10.240.1.190 at 2023-08-19 14:06:05 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (66.9ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 136ms (Views: 1.4ms | ActiveRecord: 66.9ms | Allocations: 910)
+
+
+Started GET "/api/v1/games" for 10.240.1.190 at 2023-08-19 14:06:05 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (66.7ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 135ms (Views: 1.2ms | ActiveRecord: 66.7ms | Allocations: 909)
+
+
+Started POST "/api/v1/questions" for 10.240.1.190 at 2023-08-19 14:06:16 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "question"=>{}}
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 3218)
+
+
+Started GET "/api/v1/games" for 10.240.1.190 at 2023-08-19 14:06:27 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (66.8ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 135ms (Views: 1.2ms | ActiveRecord: 66.8ms | Allocations: 909)
+
+
+Started GET "/api/v1/games" for 10.240.1.190 at 2023-08-19 14:06:27 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (66.8ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 135ms (Views: 1.3ms | ActiveRecord: 66.8ms | Allocations: 909)
+
+
+Started POST "/api/v1/questions" for 10.240.1.190 at 2023-08-19 14:07:17 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "question"=>{}}
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 3069)
+
+
+Started POST "/api/v1/games" for 10.240.1.190 at 2023-08-19 14:07:51 +0000
+Started POST "/api/v1/games" for 10.240.1.190 at 2023-08-19 14:07:51 +0000
+Processing by Api::V1::GamesController#create as */*
+  Parameters: {"score"=>7, "endTimestamp"=>"2023-08-19T14:07:51.642Z", "additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "answeredQuestions"=>[{"num1"=>8, "num2"=>7, "opType"=>"*", "answer"=>56}, {"num1"=>91, "num2"=>70, "opType"=>"-", "answer"=>21}, {"num1"=>7, "num2"=>12, "opType"=>"*", "answer"=>84}, {"num1"=>5, "num2"=>2, "opType"=>"*", "answer"=>10}, {"num1"=>4, "num2"=>32, "opType"=>"+", "answer"=>36}, {"num1"=>12, "num2"=>9, "opType"=>"*", "answer"=>108}, {"num1"=>2, "num2"=>12, "opType"=>"*", "answer"=>24}], "game"=>{"score"=>7}}
+Processing by Api::V1::GamesController#create as */*
+  Parameters: {"score"=>7, "endTimestamp"=>"2023-08-19T14:07:42.574Z", "additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "answeredQuestions"=>[{"num1"=>8, "num2"=>7, "opType"=>"*", "answer"=>56}, {"num1"=>91, "num2"=>70, "opType"=>"-", "answer"=>21}, {"num1"=>7, "num2"=>12, "opType"=>"*", "answer"=>84}, {"num1"=>5, "num2"=>2, "opType"=>"*", "answer"=>10}, {"num1"=>4, "num2"=>32, "opType"=>"+", "answer"=>36}, {"num1"=>12, "num2"=>9, "opType"=>"*", "answer"=>108}, {"num1"=>2, "num2"=>12, "opType"=>"*", "answer"=>24}], "game"=>{"score"=>7}}
+Started POST "/api/v1/games" for 10.240.1.190 at 2023-08-19 14:07:51 +0000
+Processing by Api::V1::GamesController#create as */*
+  Parameters: {"score"=>8, "endTimestamp"=>"2023-08-19T14:07:51.673Z", "additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "answeredQuestions"=>[{"num1"=>8, "num2"=>7, "opType"=>"*", "answer"=>56}, {"num1"=>91, "num2"=>70, "opType"=>"-", "answer"=>21}, {"num1"=>7, "num2"=>12, "opType"=>"*", "answer"=>84}, {"num1"=>5, "num2"=>2, "opType"=>"*", "answer"=>10}, {"num1"=>4, "num2"=>32, "opType"=>"+", "answer"=>36}, {"num1"=>12, "num2"=>9, "opType"=>"*", "answer"=>108}, {"num1"=>2, "num2"=>12, "opType"=>"*", "answer"=>24}, {"num1"=>56, "num2"=>24, "opType"=>"-", "answer"=>32}], "game"=>{"score"=>8}}
+  [1m[36mTRANSACTION (66.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:8:in `create'
+  [1m[36mGame Create (67.0ms)[0m  [1m[32mINSERT INTO "games" ("score", "end_timestamp", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["score", 7], ["end_timestamp", "2023-08-19 14:07:51.642000"], ["created_at", "2023-08-19 14:07:51.789341"], ["updated_at", "2023-08-19 14:07:51.789341"]]
+  ↳ app/controllers/api/v1/games_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (67.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (66.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mGameSetting Load (66.9ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mGameSetting Create (67.3ms)[0m  [1m[32mINSERT INTO "game_settings" ("game_id", "addition_range_start", "addition_range_end", "multiplication_range_start", "multiplication_range_end", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["game_id", 4], ["addition_range_start", 2], ["addition_range_end", 100], ["multiplication_range_start", 2], ["multiplication_range_end", 12], ["duration", 30], ["created_at", "2023-08-19 14:07:52.129254"], ["updated_at", "2023-08-19 14:07:52.129254"]]
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (67.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (66.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (67.3ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 4], ["num1", 8], ["num2", 7], ["op_type", "*"], ["answer", 56], ["created_at", "2023-08-19 14:07:52.266485"], ["updated_at", "2023-08-19 14:07:52.266485"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (67.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (66.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (67.0ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 4], ["num1", 91], ["num2", 70], ["op_type", "-"], ["answer", 21], ["created_at", "2023-08-19 14:07:52.470931"], ["updated_at", "2023-08-19 14:07:52.470931"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (67.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (66.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (67.0ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 4], ["num1", 7], ["num2", 12], ["op_type", "*"], ["answer", 84], ["created_at", "2023-08-19 14:07:52.675122"], ["updated_at", "2023-08-19 14:07:52.675122"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (67.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (66.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (67.1ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 4], ["num1", 5], ["num2", 2], ["op_type", "*"], ["answer", 10], ["created_at", "2023-08-19 14:07:52.881622"], ["updated_at", "2023-08-19 14:07:52.881622"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (67.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (66.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (67.2ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 4], ["num1", 4], ["num2", 32], ["op_type", "+"], ["answer", 36], ["created_at", "2023-08-19 14:07:53.085608"], ["updated_at", "2023-08-19 14:07:53.085608"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (67.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mGame Create (63.2ms)[0m  [1m[32mINSERT INTO "games" ("score", "end_timestamp", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["score", 7], ["end_timestamp", "2023-08-19 14:07:42.574000"], ["created_at", "2023-08-19 14:07:53.178375"], ["updated_at", "2023-08-19 14:07:53.178375"]]
+  ↳ app/controllers/api/v1/games_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (66.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (63.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (65.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:8:in `create'
+  [1m[36mQuestion Create (67.0ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 4], ["num1", 12], ["num2", 9], ["op_type", "*"], ["answer", 108], ["created_at", "2023-08-19 14:07:53.289413"], ["updated_at", "2023-08-19 14:07:53.289413"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (61.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mGame Create (66.7ms)[0m  [1m[32mINSERT INTO "games" ("score", "end_timestamp", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["score", 8], ["end_timestamp", "2023-08-19 14:07:51.673000"], ["created_at", "2023-08-19 14:07:53.356014"], ["updated_at", "2023-08-19 14:07:53.356014"]]
+  ↳ app/controllers/api/v1/games_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (67.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (66.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (66.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mGameSetting Load (63.3ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (65.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mQuestion Create (66.8ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 4], ["num1", 2], ["num2", 12], ["op_type", "*"], ["answer", 24], ["created_at", "2023-08-19 14:07:53.493154"], ["updated_at", "2023-08-19 14:07:53.493154"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mGameSetting Create (63.3ms)[0m  [1m[32mINSERT INTO "game_settings" ("game_id", "addition_range_start", "addition_range_end", "multiplication_range_start", "multiplication_range_end", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["game_id", 5], ["addition_range_start", 2], ["addition_range_end", 100], ["multiplication_range_start", 2], ["multiplication_range_end", 12], ["duration", 30], ["created_at", "2023-08-19 14:07:53.621655"], ["updated_at", "2023-08-19 14:07:53.621655"]]
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (67.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+Completed 201 Created in 1977ms (Views: 0.3ms | ActiveRecord: 1875.5ms | Allocations: 35044)
+
+
+  [1m[36mTRANSACTION (62.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (62.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mGameSetting Load (66.4ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mQuestion Create (63.5ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 5], ["num1", 8], ["num2", 7], ["op_type", "*"], ["answer", 56], ["created_at", "2023-08-19 14:07:53.750303"], ["updated_at", "2023-08-19 14:07:53.750303"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mGameSetting Create (66.7ms)[0m  [1m[32mINSERT INTO "game_settings" ("game_id", "addition_range_start", "addition_range_end", "multiplication_range_start", "multiplication_range_end", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["game_id", 6], ["addition_range_start", 2], ["addition_range_end", 100], ["multiplication_range_start", 2], ["multiplication_range_end", 12], ["duration", 30], ["created_at", "2023-08-19 14:07:53.824348"], ["updated_at", "2023-08-19 14:07:53.824348"]]
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (63.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (66.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (62.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (65.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (62.6ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 5], ["num1", 91], ["num2", 70], ["op_type", "-"], ["answer", 21], ["created_at", "2023-08-19 14:07:53.942399"], ["updated_at", "2023-08-19 14:07:53.942399"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (67.1ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 6], ["num1", 8], ["num2", 7], ["op_type", "*"], ["answer", 56], ["created_at", "2023-08-19 14:07:53.959879"], ["updated_at", "2023-08-19 14:07:53.959879"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (63.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (66.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (65.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (62.7ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 5], ["num1", 7], ["num2", 12], ["op_type", "*"], ["answer", 84], ["created_at", "2023-08-19 14:07:54.133761"], ["updated_at", "2023-08-19 14:07:54.133761"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (66.3ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 6], ["num1", 91], ["num2", 70], ["op_type", "-"], ["answer", 21], ["created_at", "2023-08-19 14:07:54.162147"], ["updated_at", "2023-08-19 14:07:54.162147"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (63.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (66.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (65.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (62.9ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 5], ["num1", 5], ["num2", 2], ["op_type", "*"], ["answer", 10], ["created_at", "2023-08-19 14:07:54.324542"], ["updated_at", "2023-08-19 14:07:54.324542"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (66.3ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 6], ["num1", 7], ["num2", 12], ["op_type", "*"], ["answer", 84], ["created_at", "2023-08-19 14:07:54.363551"], ["updated_at", "2023-08-19 14:07:54.363551"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (63.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (66.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (65.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (62.6ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 5], ["num1", 4], ["num2", 32], ["op_type", "+"], ["answer", 36], ["created_at", "2023-08-19 14:07:54.516187"], ["updated_at", "2023-08-19 14:07:54.516187"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (66.2ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 6], ["num1", 5], ["num2", 2], ["op_type", "*"], ["answer", 10], ["created_at", "2023-08-19 14:07:54.564447"], ["updated_at", "2023-08-19 14:07:54.564447"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (71.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (62.7ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 5], ["num1", 12], ["num2", 9], ["op_type", "*"], ["answer", 108], ["created_at", "2023-08-19 14:07:54.708035"], ["updated_at", "2023-08-19 14:07:54.708035"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (65.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (63.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (66.1ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 6], ["num1", 4], ["num2", 32], ["op_type", "+"], ["answer", 36], ["created_at", "2023-08-19 14:07:54.769862"], ["updated_at", "2023-08-19 14:07:54.769862"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (66.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (62.5ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 5], ["num1", 2], ["num2", 12], ["op_type", "*"], ["answer", 24], ["created_at", "2023-08-19 14:07:54.899171"], ["updated_at", "2023-08-19 14:07:54.899171"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (65.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+Completed 201 Created in 3369ms (Views: 0.2ms | ActiveRecord: 2639.5ms | Allocations: 64164)
+
+
+  [1m[36mQuestion Create (66.1ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 6], ["num1", 12], ["num2", 9], ["op_type", "*"], ["answer", 108], ["created_at", "2023-08-19 14:07:54.971057"], ["updated_at", "2023-08-19 14:07:54.971057"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (66.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (70.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (66.0ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 6], ["num1", 2], ["num2", 12], ["op_type", "*"], ["answer", 24], ["created_at", "2023-08-19 14:07:55.172848"], ["updated_at", "2023-08-19 14:07:55.172848"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (66.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (65.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (66.1ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 6], ["num1", 56], ["num2", 24], ["op_type", "-"], ["answer", 32], ["created_at", "2023-08-19 14:07:55.379380"], ["updated_at", "2023-08-19 14:07:55.379380"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (66.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+Completed 201 Created in 3762ms (Views: 0.2ms | ActiveRecord: 2994.2ms | Allocations: 67067)
+
+
+Started GET "/api/v1/games" for 10.240.1.190 at 2023-08-19 14:08:27 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (67.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 136ms (Views: 1.9ms | ActiveRecord: 67.2ms | Allocations: 1195)
+
+
+Started GET "/api/v1/games" for 10.240.1.190 at 2023-08-19 14:08:27 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (66.1ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 134ms (Views: 2.2ms | ActiveRecord: 66.1ms | Allocations: 1194)
+
+
+Started DELETE "/api/v1/games/6" for 10.240.1.190 at 2023-08-19 14:08:36 +0000
+Processing by Api::V1::GamesController#destroy as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mGame Load (66.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:54:in `destroy'
+  [1m[36mTRANSACTION (65.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGameSetting Load (70.8ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGameSetting Destroy (66.0ms)[0m  [1m[31mDELETE FROM "game_settings" WHERE "game_settings"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Load (66.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 6]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (65.9ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 38]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (66.2ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 40]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (66.1ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 42]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (66.0ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 44]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (66.1ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 46]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (66.1ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 48]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+Started DELETE "/api/v1/games/4" for 10.240.1.190 at 2023-08-19 14:08:37 +0000
+Processing by Api::V1::GamesController#destroy as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mQuestion Destroy (69.7ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 49]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (66.0ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 50]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGame Destroy (66.9ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGame Load (62.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:54:in `destroy'
+  [1m[36mTRANSACTION (66.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+Completed 200 OK in 1215ms (Views: 0.1ms | ActiveRecord: 1000.6ms | Allocations: 12230)
+
+
+  [1m[36mTRANSACTION (61.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGameSetting Load (62.3ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGameSetting Destroy (62.4ms)[0m  [1m[31mDELETE FROM "game_settings" WHERE "game_settings"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Load (62.9ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 4]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (62.2ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 29]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (62.9ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 30]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (62.8ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 31]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (62.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 32]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (62.4ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 33]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (62.4ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 34]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (62.4ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 35]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGame Destroy (63.2ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mTRANSACTION (62.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+Completed 200 OK in 1078ms (Views: 0.1ms | ActiveRecord: 875.6ms | Allocations: 12158)
+
+
+Started GET "/api/v1/games/5" for 10.240.1.190 at 2023-08-19 14:08:45 +0000
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mGame Load (62.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:41:in `show'
+  [1m[36mGameSetting Load (62.3ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:44:in `show'
+  [1m[36mQuestion Load (62.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 5]]
+  ↳ app/controllers/api/v1/games_controller.rb:42:in `show'
+Completed 200 OK in 255ms (Views: 2.4ms | ActiveRecord: 187.1ms | Allocations: 2827)
+
+
+Started GET "/api/v1/games/5" for 10.240.1.190 at 2023-08-19 14:09:10 +0000
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mGame Load (62.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:41:in `show'
+  [1m[36mGameSetting Load (62.3ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:44:in `show'
+  [1m[36mQuestion Load (62.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 5]]
+  ↳ app/controllers/api/v1/games_controller.rb:42:in `show'
+Completed 200 OK in 254ms (Views: 2.1ms | ActiveRecord: 187.1ms | Allocations: 2827)
+
+
+Started GET "/api/v1/games/5" for 10.240.1.190 at 2023-08-19 14:09:22 +0000
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mGame Load (62.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:41:in `show'
+  [1m[36mGameSetting Load (62.2ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:44:in `show'
+  [1m[36mQuestion Load (62.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 5]]
+  ↳ app/controllers/api/v1/games_controller.rb:42:in `show'
+Completed 200 OK in 254ms (Views: 1.8ms | ActiveRecord: 187.0ms | Allocations: 2827)
+
+
+Started GET "/api/v1/games/5" for 10.240.1.190 at 2023-08-19 14:09:31 +0000
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mGame Load (62.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:41:in `show'
+  [1m[36mGameSetting Load (62.4ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:44:in `show'
+  [1m[36mQuestion Load (62.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 5]]
+  ↳ app/controllers/api/v1/games_controller.rb:42:in `show'
+Completed 200 OK in 254ms (Views: 2.0ms | ActiveRecord: 187.4ms | Allocations: 2826)
+
+
+Started GET "/api/v1/games/1" for 10.240.1.190 at 2023-08-19 14:09:44 +0000
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (62.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:41:in `show'
+  [1m[36mGameSetting Load (62.4ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:44:in `show'
+  [1m[36mQuestion Load (62.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:42:in `show'
+Completed 200 OK in 255ms (Views: 2.0ms | ActiveRecord: 187.3ms | Allocations: 3030)
+
+
+Started DELETE "/api/v1/games/1" for 10.240.1.190 at 2023-08-19 14:09:59 +0000
+Processing by Api::V1::GamesController#destroy as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (62.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:54:in `destroy'
+  [1m[36mTRANSACTION (62.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGameSetting Load (62.2ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGameSetting Destroy (62.6ms)[0m  [1m[31mDELETE FROM "game_settings" WHERE "game_settings"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Load (62.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (62.6ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (62.4ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (62.4ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (62.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (62.5ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (62.4ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (62.5ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (62.5ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 13]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (62.6ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 16]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGame Destroy (63.6ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mTRANSACTION (63.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+Completed 200 OK in 1078ms (Views: 0.2ms | ActiveRecord: 1000.0ms | Allocations: 10925)
+
+
+Started GET "/api/v1/games" for 10.240.1.190 at 2023-08-19 14:10:03 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (63.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 128ms (Views: 1.7ms | ActiveRecord: 63.6ms | Allocations: 909)
+
+
+Started GET "/api/v1/games" for 10.240.1.190 at 2023-08-19 14:10:03 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (62.4ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 126ms (Views: 1.4ms | ActiveRecord: 62.4ms | Allocations: 909)
+
+
+Started GET "/" for 10.240.3.217 at 2023-08-23 22:10:10 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (64.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/rvm/gems/ruby-3.2.2/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-3.2.2/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.6ms | Allocations: 490)
+Completed 200 OK in 16ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 4062)
+
+
+Started GET "/hello" for 10.240.3.217 at 2023-08-23 22:10:18 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/hello"):
+  
+Started GET "/favicon.ico" for 10.240.3.217 at 2023-08-23 22:10:18 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/games" for 10.240.3.217 at 2023-08-23 22:10:24 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/games"):
+  
+Started GET "/api/v1/games" for 10.240.3.217 at 2023-08-23 22:10:32 +0000
+Processing by Api::V1::GamesController#index as HTML
+  [1m[36mGame Load (63.7ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 392ms (Views: 6.1ms | ActiveRecord: 318.1ms | Allocations: 7369)
+
+
+Started GET "/api/v1/games" for 10.240.3.217 at 2023-08-23 22:10:59 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (62.3ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 127ms (Views: 1.8ms | ActiveRecord: 62.3ms | Allocations: 921)
+
+
+Started GET "/api/v1/games" for 10.240.3.217 at 2023-08-23 22:10:59 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (62.3ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 126ms (Views: 1.5ms | ActiveRecord: 62.3ms | Allocations: 919)
+
+
+Started POST "/api/v1/questions" for 10.240.1.75 at 2023-08-23 22:12:20 +0000
+Processing by Api::V1::QuestionsController#create as */*
+  Parameters: {"additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "question"=>{}}
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 65.0ms | Allocations: 3240)
+
+
+Started POST "/api/v1/games" for 10.240.1.75 at 2023-08-23 22:12:54 +0000
+Started POST "/api/v1/games" for 10.240.1.75 at 2023-08-23 22:12:54 +0000
+Processing by Api::V1::GamesController#create as */*
+  Parameters: {"score"=>8, "endTimestamp"=>"2023-08-23T22:12:48.743Z", "additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "answeredQuestions"=>[{"num1"=>11, "num2"=>6, "opType"=>"*", "answer"=>66}, {"num1"=>47, "num2"=>47, "opType"=>"+", "answer"=>94}, {"num1"=>36, "num2"=>4, "opType"=>"/", "answer"=>9}, {"num1"=>11, "num2"=>9, "opType"=>"*", "answer"=>99}, {"num1"=>144, "num2"=>12, "opType"=>"/", "answer"=>12}, {"num1"=>50, "num2"=>51, "opType"=>"+", "answer"=>101}, {"num1"=>79, "num2"=>41, "opType"=>"+", "answer"=>120}, {"num1"=>20, "num2"=>96, "opType"=>"+", "answer"=>116}], "game"=>{"score"=>8}}
+Processing by Api::V1::GamesController#create as */*
+  Parameters: {"score"=>8, "endTimestamp"=>"2023-08-23T22:12:53.770Z", "additionRange"=>{"min"=>2, "max"=>100}, "multiplicationRange"=>{"min"=>2, "max"=>12}, "duration"=>30, "answeredQuestions"=>[{"num1"=>11, "num2"=>6, "opType"=>"*", "answer"=>66}, {"num1"=>47, "num2"=>47, "opType"=>"+", "answer"=>94}, {"num1"=>36, "num2"=>4, "opType"=>"/", "answer"=>9}, {"num1"=>11, "num2"=>9, "opType"=>"*", "answer"=>99}, {"num1"=>144, "num2"=>12, "opType"=>"/", "answer"=>12}, {"num1"=>50, "num2"=>51, "opType"=>"+", "answer"=>101}, {"num1"=>79, "num2"=>41, "opType"=>"+", "answer"=>120}, {"num1"=>20, "num2"=>96, "opType"=>"+", "answer"=>116}], "game"=>{"score"=>8}}
+  [1m[36mTRANSACTION (61.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:8:in `create'
+  [1m[36mGame Create (62.6ms)[0m  [1m[32mINSERT INTO "games" ("score", "end_timestamp", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["score", 8], ["end_timestamp", "2023-08-23 22:12:48.743000"], ["created_at", "2023-08-23 22:12:54.072086"], ["updated_at", "2023-08-23 22:12:54.072086"]]
+  ↳ app/controllers/api/v1/games_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (63.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (62.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mGameSetting Load (63.0ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mGameSetting Create (62.7ms)[0m  [1m[32mINSERT INTO "game_settings" ("game_id", "addition_range_start", "addition_range_end", "multiplication_range_start", "multiplication_range_end", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["game_id", 7], ["addition_range_start", 2], ["addition_range_end", 100], ["multiplication_range_start", 2], ["multiplication_range_end", 12], ["duration", 30], ["created_at", "2023-08-23 22:12:54.660189"], ["updated_at", "2023-08-23 22:12:54.660189"]]
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (63.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (61.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (63.2ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 7], ["num1", 11], ["num2", 6], ["op_type", "*"], ["answer", 66], ["created_at", "2023-08-23 22:12:54.858651"], ["updated_at", "2023-08-23 22:12:54.858651"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (63.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (61.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (62.6ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 7], ["num1", 47], ["num2", 47], ["op_type", "+"], ["answer", 94], ["created_at", "2023-08-23 22:12:55.050982"], ["updated_at", "2023-08-23 22:12:55.050982"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (61.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (62.6ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 7], ["num1", 36], ["num2", 4], ["op_type", "/"], ["answer", 9], ["created_at", "2023-08-23 22:12:55.241720"], ["updated_at", "2023-08-23 22:12:55.241720"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (63.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (61.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (61.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:8:in `create'
+  [1m[36mQuestion Create (62.6ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 7], ["num1", 11], ["num2", 9], ["op_type", "*"], ["answer", 99], ["created_at", "2023-08-23 22:12:55.432362"], ["updated_at", "2023-08-23 22:12:55.432362"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mGame Create (62.8ms)[0m  [1m[32mINSERT INTO "games" ("score", "end_timestamp", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["score", 8], ["end_timestamp", "2023-08-23 22:12:53.770000"], ["created_at", "2023-08-23 22:12:55.458662"], ["updated_at", "2023-08-23 22:12:55.458662"]]
+  ↳ app/controllers/api/v1/games_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (63.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (62.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (61.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mQuestion Create (62.6ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 7], ["num1", 144], ["num2", 12], ["op_type", "/"], ["answer", 12], ["created_at", "2023-08-23 22:12:55.623651"], ["updated_at", "2023-08-23 22:12:55.623651"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mGameSetting Load (62.4ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mQuestion Create (62.5ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 7], ["num1", 50], ["num2", 51], ["op_type", "+"], ["answer", 101], ["created_at", "2023-08-23 22:12:55.815186"], ["updated_at", "2023-08-23 22:12:55.815186"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mGameSetting Create (62.7ms)[0m  [1m[32mINSERT INTO "game_settings" ("game_id", "addition_range_start", "addition_range_end", "multiplication_range_start", "multiplication_range_end", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["game_id", 8], ["addition_range_start", 2], ["addition_range_end", 100], ["multiplication_range_start", 2], ["multiplication_range_end", 12], ["duration", 30], ["created_at", "2023-08-23 22:12:55.898403"], ["updated_at", "2023-08-23 22:12:55.898403"]]
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (62.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (61.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (61.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (62.4ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 7], ["num1", 79], ["num2", 41], ["op_type", "+"], ["answer", 120], ["created_at", "2023-08-23 22:12:56.005985"], ["updated_at", "2023-08-23 22:12:56.005985"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (63.1ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 8], ["num1", 11], ["num2", 6], ["op_type", "*"], ["answer", 66], ["created_at", "2023-08-23 22:12:56.032013"], ["updated_at", "2023-08-23 22:12:56.032013"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (61.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (61.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (62.4ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 7], ["num1", 20], ["num2", 96], ["op_type", "+"], ["answer", 116], ["created_at", "2023-08-23 22:12:56.195477"], ["updated_at", "2023-08-23 22:12:56.195477"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (62.2ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 8], ["num1", 47], ["num2", 47], ["op_type", "+"], ["answer", 94], ["created_at", "2023-08-23 22:12:56.222392"], ["updated_at", "2023-08-23 22:12:56.222392"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (63.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+Completed 201 Created in 2377ms (Views: 0.3ms | ActiveRecord: 2193.5ms | Allocations: 47628)
+
+
+  [1m[36mTRANSACTION (62.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (61.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (62.2ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 8], ["num1", 36], ["num2", 4], ["op_type", "/"], ["answer", 9], ["created_at", "2023-08-23 22:12:56.412006"], ["updated_at", "2023-08-23 22:12:56.412006"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (61.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (62.1ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 8], ["num1", 11], ["num2", 9], ["op_type", "*"], ["answer", 99], ["created_at", "2023-08-23 22:12:56.602686"], ["updated_at", "2023-08-23 22:12:56.602686"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (61.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (62.2ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 8], ["num1", 144], ["num2", 12], ["op_type", "/"], ["answer", 12], ["created_at", "2023-08-23 22:12:56.792311"], ["updated_at", "2023-08-23 22:12:56.792311"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (61.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (62.1ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 8], ["num1", 50], ["num2", 51], ["op_type", "+"], ["answer", 101], ["created_at", "2023-08-23 22:12:56.982502"], ["updated_at", "2023-08-23 22:12:56.982502"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (61.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (62.0ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 8], ["num1", 79], ["num2", 41], ["op_type", "+"], ["answer", 120], ["created_at", "2023-08-23 22:12:57.172171"], ["updated_at", "2023-08-23 22:12:57.172171"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (61.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mQuestion Create (62.0ms)[0m  [1m[32mINSERT INTO "questions" ("game_id", "num1", "num2", "op_type", "answer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["game_id", 8], ["num1", 20], ["num2", 96], ["op_type", "+"], ["answer", 116], ["created_at", "2023-08-23 22:12:57.361650"], ["updated_at", "2023-08-23 22:12:57.361650"]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+  [1m[36mTRANSACTION (62.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `block in create'
+Completed 201 Created in 3541ms (Views: 0.3ms | ActiveRecord: 2802.7ms | Allocations: 60381)
+
+
+Started GET "/api/v1/games" for 10.240.1.75 at 2023-08-23 22:13:33 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (63.0ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 127ms (Views: 1.8ms | ActiveRecord: 63.0ms | Allocations: 1099)
+
+
+Started GET "/api/v1/games" for 10.240.1.75 at 2023-08-23 22:13:34 +0000
+Processing by Api::V1::GamesController#index as */*
+  [1m[36mGame Load (62.0ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."end_timestamp" DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:35:in `index'
+Completed 200 OK in 125ms (Views: 1.6ms | ActiveRecord: 62.0ms | Allocations: 1102)
+
+
+Started GET "/api/v1/games/8" for 10.240.1.75 at 2023-08-23 22:13:38 +0000
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (61.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:41:in `show'
+  [1m[36mGameSetting Load (62.0ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:44:in `show'
+  [1m[36mQuestion Load (62.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 8]]
+  ↳ app/controllers/api/v1/games_controller.rb:42:in `show'
+Completed 200 OK in 378ms (Views: 64.6ms | ActiveRecord: 186.2ms | Allocations: 3371)
+
+
+Started GET "/api/v1/games/7" for 10.240.1.75 at 2023-08-23 22:13:40 +0000
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mGame Load (61.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:41:in `show'
+  [1m[36mGameSetting Load (63.0ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:44:in `show'
+  [1m[36mQuestion Load (61.7ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 7]]
+  ↳ app/controllers/api/v1/games_controller.rb:42:in `show'
+Completed 200 OK in 254ms (Views: 2.4ms | ActiveRecord: 186.6ms | Allocations: 2930)
+
+
+Started DELETE "/api/v1/games/8" for 10.240.1.75 at 2023-08-23 22:13:50 +0000
+Processing by Api::V1::GamesController#destroy as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (62.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:54:in `destroy'
+  [1m[36mTRANSACTION (61.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGameSetting Load (61.9ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGameSetting Destroy (62.0ms)[0m  [1m[31mDELETE FROM "game_settings" WHERE "game_settings"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Load (62.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 8]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (61.9ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 58]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (61.9ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 60]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (62.1ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 61]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (61.8ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 62]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (62.0ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 63]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (62.0ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 64]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (61.9ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 65]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (62.0ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 66]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGame Destroy (63.0ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mTRANSACTION (62.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+Completed 200 OK in 1014ms (Views: 0.2ms | ActiveRecord: 931.0ms | Allocations: 10382)
+
+
+Started GET "/api/v1/games/2" for 10.240.1.75 at 2023-08-23 22:13:56 +0000
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mGame Load (61.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:41:in `show'
+  [1m[36mGameSetting Load (61.9ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:44:in `show'
+  [1m[36mQuestion Load (62.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 2]]
+  ↳ app/controllers/api/v1/games_controller.rb:42:in `show'
+Completed 200 OK in 253ms (Views: 2.6ms | ActiveRecord: 185.8ms | Allocations: 3032)
+
+
+Started GET "/api/v1/games/2" for 10.240.1.75 at 2023-08-23 22:14:05 +0000
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mGame Load (61.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:41:in `show'
+  [1m[36mGameSetting Load (62.0ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:44:in `show'
+  [1m[36mQuestion Load (61.9ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 2]]
+  ↳ app/controllers/api/v1/games_controller.rb:42:in `show'
+Completed 200 OK in 253ms (Views: 2.4ms | ActiveRecord: 185.6ms | Allocations: 3030)
+
+
+Started GET "/api/v1/games/7" for 10.240.1.75 at 2023-08-23 22:14:30 +0000
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mGame Load (61.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:41:in `show'
+  [1m[36mGameSetting Load (61.6ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:44:in `show'
+  [1m[36mQuestion Load (61.9ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 7]]
+  ↳ app/controllers/api/v1/games_controller.rb:42:in `show'
+Completed 200 OK in 252ms (Views: 2.5ms | ActiveRecord: 185.3ms | Allocations: 2930)
+
+
+Started DELETE "/api/v1/games/7" for 10.240.1.75 at 2023-08-23 22:14:54 +0000
+Processing by Api::V1::GamesController#destroy as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mGame Load (61.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:54:in `destroy'
+  [1m[36mTRANSACTION (61.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGameSetting Load (61.7ms)[0m  [1m[34mSELECT "game_settings".* FROM "game_settings" WHERE "game_settings"."game_id" = $1 LIMIT $2[0m  [["game_id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGameSetting Destroy (62.0ms)[0m  [1m[31mDELETE FROM "game_settings" WHERE "game_settings"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Load (61.7ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."game_id" = $1[0m  [["game_id", 7]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (61.9ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 51]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (61.8ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 52]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (61.9ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 53]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (62.0ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 54]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (61.9ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 55]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (62.1ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 56]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (62.0ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 57]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mQuestion Destroy (61.9ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 59]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mGame Destroy (63.6ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+  [1m[36mTRANSACTION (62.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/games_controller.rb:55:in `destroy'
+Completed 200 OK in 1010ms (Views: 0.4ms | ActiveRecord: 930.2ms | Allocations: 10190)
+
+
