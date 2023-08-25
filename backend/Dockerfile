@@ -1,5 +1,5 @@
 # Use the official Ruby image from the Docker Hub
-FROM ruby:3.0.2
+FROM ruby:3.2.2
 
 # Install dependencies
 RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
