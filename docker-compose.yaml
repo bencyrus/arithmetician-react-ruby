@@ -1,0 +1,21 @@
+version: "3"
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      RAILS_DB_HOST: ${PGHOST}
+      RAILS_DB_PORT: ${PGPORT}
+      RAILS_DB_USERNAME: ${PGUSER}
+      RAILS_DB_PASSWORD: ${PGPASSWORD}
+      RAILS_DB_NAME: ${PGDATABASE}
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
