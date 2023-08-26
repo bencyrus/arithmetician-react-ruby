@@ -22,6 +22,14 @@ jobs:
       - name: Ensure Docker is Running
         run: sudo systemctl start docker || sudo systemctl status docker || true
 
+      - name: Export Environment Variables for Docker
+        run: |
+          echo "PGDATABASE=${{ secrets.PGDATABASE }}" >> $GITHUB_ENV
+          echo "PGHOST=${{ secrets.PGHOST }}" >> $GITHUB_ENV
+          echo "PGPASSWORD=${{ secrets.PGPASSWORD }}" >> $GITHUB_ENV
+          echo "PGPORT=${{ secrets.PGPORT }}" >> $GITHUB_ENV
+          echo "PGUSER=${{ secrets.PGUSER }}" >> $GITHUB_ENV
+
       - name: Build and run Docker Compose
         run: docker-compose up -d
 
