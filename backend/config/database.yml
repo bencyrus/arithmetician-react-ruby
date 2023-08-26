@@ -2,27 +2,17 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: <%= ENV['RAILS_DB_HOST'] %>
+  port: <%= ENV['RAILS_DB_PORT'] %>
+  username: <%= ENV['RAILS_DB_USERNAME'] %>
+  password: <%= ENV['RAILS_DB_PASSWORD'] %>
+  database: <%= ENV['RAILS_DB_NAME'] %>
 
 development:
   <<: *default
-  database: railway
-  host: containers-us-west-167.railway.app
-  username: postgres
-  password: WnFwYpEIvb5rtDqTJYYj
-  port: 7251
 
 test:
   <<: *default
-  database: railway
-  host: containers-us-west-167.railway.app
-  username: postgres
-  password: WnFwYpEIvb5rtDqTJYYj
-  port: 7251
 
 production:
   <<: *default
-  database: railway
-  host: containers-us-west-167.railway.app
-  username: postgres
-  password: WnFwYpEIvb5rtDqTJYYj
-  port: 7251
