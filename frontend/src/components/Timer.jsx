@@ -10,7 +10,7 @@ const Timer = ({ initialTime, onTimeOut }) => {
 			const intervalId = setInterval(() => setTimer((t) => t - 1), 1000)
 			return () => clearInterval(intervalId)
 		}
-	}, [timer, onTimeOut])
+	}, [timer])
 
 	return <span>Seconds left: {timer}</span>
 }

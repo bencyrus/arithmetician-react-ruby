@@ -1,56 +1,3 @@
-# name: CI/CD Pipeline for Arithmetician
-
-# on:
-#   push:
-#     branches:
-#       - main
-
-# jobs:
-#   build-and-test:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Checkout code
-#         uses: actions/checkout@v2
-
-#       - name: Set Environment Variables from Secrets
-#         env:
-#           PGDATABASE: ${{ secrets.PGDATABASE }}
-#           PGHOST: ${{ secrets.PGHOST }}
-#           PGPASSWORD: ${{ secrets.PGPASSWORD }}
-#           PGPORT: ${{ secrets.PGPORT }}
-#           PGUSER: ${{ secrets.PGUSER }}
-#         run: |
-#           echo "Environment variables set."
-
-#       - name: Build and run Docker Compose
-#         run: docker-compose up -d
-
-#       - name: Upload artifacts
-#         uses: actions/upload-artifact@v2
-#         with:
-#           name: arithmetician-artifact
-#           path: ./
-
-#   deploy:
-#     runs-on: ubuntu-latest
-#     needs: build-and-test
-#     steps:
-#       - name: Download artifacts
-#         uses: actions/download-artifact@v2
-#         with:
-#           name: arithmetician-artifact
-#           path: /home/runner/work/arithmetician/arithmetician-artifact
-
-#       - name: Setup SSH and Deploy
-#         run: |
-#           sudo apt-get install -y openssh-client
-#           mkdir -p ~/.ssh
-#           ssh-keyscan 104.236.6.185 >> ~/.ssh/known_hosts
-#           echo "${{ secrets.GH_ACTIONS_SSH_KEY }}" > gh-actions-ssh-key
-#           chmod 600 gh-actions-ssh-key
-#           scp -r -i gh-actions-ssh-key /home/runner/work/arithmetician/arithmetician-artifact/* gh-actions@104.236.6.185:~/
-#           ssh -i gh-actions-ssh-key gh-actions@104.236.6.185 'docker-compose up -d'
-
 name: CI/CD Pipeline for Arithmetician
 
 on:
@@ -65,14 +12,16 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Create .env file
+        run: |
+          echo "PGDATABASE=${{ secrets.PGDATABASE }}" >> .env
+          echo "PGHOST=${{ secrets.PGHOST }}" >> .env
+          echo "PGPASSWORD=${{ secrets.PGPASSWORD }}" >> .env
+          echo "PGPORT=${{ secrets.PGPORT }}" >> .env
+          echo "PGUSER=${{ secrets.PGUSER }}" >> .env
+
       - name: Build and run Docker Compose
-        env:
-          PGDATABASE: ${{ secrets.PGDATABASE }}
-          PGHOST: ${{ secrets.PGHOST }}
-          PGPASSWORD: ${{ secrets.PGPASSWORD }}
-          PGPORT: ${{ secrets.PGPORT }}
-          PGUSER: ${{ secrets.PGUSER }}
-        run: docker-compose up -d
+        run: docker-compose --env-file .env up -d
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
