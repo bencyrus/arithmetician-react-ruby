@@ -19,9 +19,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Debug Print Environment Variables
-        run: echo "PGHOST=$PGHOST, PGPORT=$PGPORT, PGUSER=$PGUSER, PGDATABASE=$PGDATABASE" # Do not print PGPASSWORD
-
       - name: Ensure Docker is Running
         run: sudo systemctl start docker || sudo systemctl status docker || true
 
@@ -51,5 +48,5 @@ jobs:
           ssh-keyscan 104.236.6.185 >> ~/.ssh/known_hosts
           echo "${{ secrets.GH_ACTIONS_SSH_KEY }}" > gh-actions-ssh-key
           chmod 600 gh-actions-ssh-key
-          scp -v -r -i gh-actions-ssh-key /home/runner/work/arithmetician/arithmetician-artifact/* gh-actions@104.236.6.185:~/
-          ssh -v -i gh-actions-ssh-key gh-actions@104.236.6.185 'docker-compose up -d'
+          scp -r -i gh-actions-ssh-key /home/runner/work/arithmetician/arithmetician-artifact/* gh-actions@104.236.6.185:~/
+          ssh -i gh-actions-ssh-key gh-actions@104.236.6.185 'docker-compose up -d'
