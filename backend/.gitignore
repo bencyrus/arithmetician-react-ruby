@@ -1,0 +1,61 @@
+# Ignore bundler config.
+/.bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore all log files and temporary files.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore files related to code coverage.
+/coverage
+
+# Ignore Node.js modules
+/node_modules
+/yarn-error.log
+
+# Ignore precompiled assets when using Sprockets.
+/public/assets
+
+# Ignore uploaded files in development
+/storage/*
+!/storage/.keep
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
+/config/credentials/production.key
+
+# Ignore .DS_Store
+.DS_Store
+
+# Ignore files from Docker volumes
+.docker-volumes/*
+
+# Ignore IDE-specific files
+.idea/
+.vscode/
+
+# Ignore Byebug command history file.
+.byebug_history
+
+# Ignore environment configuration file
+.env
+
+# Ignore vendor/bundle directory
+/vendor/bundle
+
+# Ignore pack files
+/public/packs
+/public/packs-test
+/public/assets
+
+# Ignore other unneeded files.
+*.swp
+*~
+.project
+.idea
+.secret

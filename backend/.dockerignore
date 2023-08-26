@@ -1,0 +1,39 @@
+# Logs
+log/*
+tmp/*
+
+# Files that might appear on external disk
+.DS_Store
+.idea
+*.swp
+
+# Node modules for when using Webpacker
+node_modules
+
+# SQLite database files
+db/*.sqlite3
+db/*.sqlite3-journal
+
+# Secrets and sensitive information
+config/secrets.yml
+config/master.key
+.env
+
+# Puma state
+tmp/pids/*.pid
+tmp/pids/*.pid.lock
+
+# Bundler config
+.bundle
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.rbc
+
+# Redundant packages for production
+/test
+/spec
+
+# Yarn
+.yarn-cache
