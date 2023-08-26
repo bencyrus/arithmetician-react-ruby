@@ -5,6 +5,13 @@ on:
     branches:
       - main
 
+env:
+  PGHOST: ${{ secrets.PGHOST }}
+  PGPORT: ${{ secrets.PGPORT }}
+  PGUSER: ${{ secrets.PGUSER }}
+  PGPASSWORD: ${{ secrets.PGPASSWORD }}
+  PGDATABASE: ${{ secrets.PGDATABASE }}
+
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
@@ -12,16 +19,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Create .env file
-        run: |
-          echo "PGDATABASE=${{ secrets.PGDATABASE }}" >> .env
-          echo "PGHOST=${{ secrets.PGHOST }}" >> .env
-          echo "PGPASSWORD=${{ secrets.PGPASSWORD }}" >> .env
-          echo "PGPORT=${{ secrets.PGPORT }}" >> .env
-          echo "PGUSER=${{ secrets.PGUSER }}" >> .env
-
       - name: Build and run Docker Compose
-        run: docker-compose --env-file .env up -d
+        run: docker-compose up -d
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
@@ -47,4 +46,4 @@ jobs:
           echo "${{ secrets.GH_ACTIONS_SSH_KEY }}" > gh-actions-ssh-key
           chmod 600 gh-actions-ssh-key
           scp -r -i gh-actions-ssh-key /home/runner/work/arithmetician/arithmetician-artifact/* gh-actions@104.236.6.185:~/
-          ssh -i gh-actions-ssh-key gh-actions@104.236.6.185 'docker-compose up -d'
+          ssh -i gh-actions-ssh-key gh-actions@104.236.6.185 "docker-compose down && docker-compose up -d --build"
