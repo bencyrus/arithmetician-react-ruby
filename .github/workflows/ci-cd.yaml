@@ -5,13 +5,6 @@ on:
     branches:
       - main
 
-env:
-  PGDATABASE: ${{ secrets.PGDATABASE }}
-  PGHOST: ${{ secrets.PGHOST }}
-  PGPASSWORD: ${{ secrets.PGPASSWORD }}
-  PGPORT: ${{ secrets.PGPORT }}
-  PGUSER: ${{ secrets.PGUSER }}
-
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
@@ -19,16 +12,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Ensure Docker is Running
-        run: sudo systemctl start docker || sudo systemctl status docker || true
-
-      - name: Export Environment Variables for Docker
+      - name: Set Environment Variables from Secrets
+        env:
+          PGDATABASE: ${{ secrets.PGDATABASE }}
+          PGHOST: ${{ secrets.PGHOST }}
+          PGPASSWORD: ${{ secrets.PGPASSWORD }}
+          PGPORT: ${{ secrets.PGPORT }}
+          PGUSER: ${{ secrets.PGUSER }}
         run: |
-          echo "PGDATABASE=${{ secrets.PGDATABASE }}" >> $GITHUB_ENV
-          echo "PGHOST=${{ secrets.PGHOST }}" >> $GITHUB_ENV
-          echo "PGPASSWORD=${{ secrets.PGPASSWORD }}" >> $GITHUB_ENV
-          echo "PGPORT=${{ secrets.PGPORT }}" >> $GITHUB_ENV
-          echo "PGUSER=${{ secrets.PGUSER }}" >> $GITHUB_ENV
+          echo "Environment variables set."
 
       - name: Build and run Docker Compose
         run: docker-compose up -d
