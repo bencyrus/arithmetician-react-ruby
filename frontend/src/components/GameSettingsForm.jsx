@@ -112,6 +112,7 @@ const GameSettingsForm = () => {
 						type="submit"
 						style={{
 							width: '50%',
+							height: '30px',
 							alignSelf: 'center',
 						}}
 					>
