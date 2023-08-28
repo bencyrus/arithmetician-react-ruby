@@ -39,15 +39,32 @@ const PastGamesListItem = ({ game, onDelete }) => {
 	}
 
 	return (
-		<div>
+		<div
+			style={{
+				borderBottom: '1px solid #000',
+			}}
+		>
 			<div
 				style={{ display: 'flex', justifyContent: 'space-between' }}
 				onClick={handleToggle}
 			>
 				<p>Score: {game.score}</p>
 				<p>{new Date(game.end_timestamp).toLocaleString()}</p>
-				{isOpen ? <AiOutlineUp /> : <AiOutlineDown />}
-				<AiOutlineDelete onClick={handleDelete} />
+				<div
+					style={{
+						display: 'flex',
+						justifyContent: 'space-between',
+						alignItems: 'center',
+						width: '60px',
+					}}
+				>
+					{isOpen ? (
+						<AiOutlineUp size={25} />
+					) : (
+						<AiOutlineDown size={25} />
+					)}
+					<AiOutlineDelete size={25} onClick={handleDelete} />
+				</div>
 			</div>
 			{isOpen && (
 				<div style={{ marginLeft: '1rem' }}>
@@ -94,7 +111,6 @@ const PastGamesListItem = ({ game, onDelete }) => {
 					) : null}
 				</div>
 			)}
-			<hr />
 		</div>
 	)
 }
