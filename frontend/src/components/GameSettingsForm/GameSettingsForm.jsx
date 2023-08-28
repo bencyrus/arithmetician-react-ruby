@@ -1,10 +1,10 @@
 import { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { ClipLoader } from 'react-spinners'
-import GameContext from '../context/GameContext'
-import RangeInput from '../components/RangeInput'
-import DurationSelect from '../components/DurationSelect'
-import useQuestions from '../hooks/useQuestions'
+import GameContext from '../../context/GameContext'
+import RangeInput from '../RangeInput'
+import DurationSelect from '../DurationSelect'
+import useQuestions from '../../hooks/useQuestions'
 
 const GameSettingsForm = () => {
 	const {

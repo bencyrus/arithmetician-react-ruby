@@ -1,6 +1,6 @@
 import React from 'react'
-import PastGames from '../components/PastGames'
-import GameSettingsForm from '../components/GameSettingsForm'
+import PastGames from '../../components/PastGames'
+import GameSettingsForm from '../../components/GameSettingsForm'
 import './HomePage.css'
 
 const HomePage = () => {

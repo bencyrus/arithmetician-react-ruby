@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { ClipLoader } from 'react-spinners'
-import PastGamesListItem from './PastGamesListItem'
+import PastGamesListItem from '../PastGamesListItem'
 import './PastGames.css'
 
 const PastGames = () => {

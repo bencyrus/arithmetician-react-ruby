@@ -1,9 +1,9 @@
 import { useContext, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { ClipLoader } from 'react-spinners'
-import GameContext from '../context/GameContext'
-import Question from '../components/Question'
-import Timer from '../components/Timer'
+import GameContext from '../../context/GameContext'
+import Question from '../../components/Question'
+import Timer from '../../components/Timer'
 
 const GamePage = () => {
 	const {

@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
-import GameContext from '../context/GameContext'
-import useQuestions from '../hooks/useQuestions'
+import GameContext from '../../context/GameContext'
+import useQuestions from '../../hooks/useQuestions'
 import './ScorePage.css'
 
 const ScorePage = () => {
