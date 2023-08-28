@@ -75,35 +75,49 @@ const GameSettingsForm = () => {
 				style={{
 					display: 'flex',
 					flexDirection: 'column',
-					alignItems: 'flex-start',
+					alignItems: 'center',
+					maxWidth: '400px',
+					margin: 'auto',
 				}}
 			>
-				<RangeInput
-					value={additionRange}
-					onChange={setAdditionRange}
-					label="Addition Range"
-					style={{ margin: '8px 0' }}
-				/>
-				<RangeInput
-					value={multiplicationRange}
-					onChange={setMultiplicationRange}
-					label="Multiplication Range"
-					style={{ margin: '8px 0' }}
-				/>
-				<DurationSelect
-					value={duration}
-					onChange={setDuration}
-					options={[
-						{ value: 30, label: '30 seconds' },
-						{ value: 60, label: '60 seconds' },
-						{ value: 90, label: '90 seconds' },
-						{ value: 120, label: '120 seconds' },
-					]}
-					style={{ margin: '8px 0' }}
-				/>
-				<button type="submit" style={{ margin: '8px 0' }}>
-					Start Game
-				</button>
+				<div
+					style={{
+						display: 'flex',
+						flexDirection: 'column',
+						width: '100%',
+						gap: '10px',
+					}}
+				>
+					<RangeInput
+						value={additionRange}
+						onChange={setAdditionRange}
+						label="Addition Range"
+					/>
+					<RangeInput
+						value={multiplicationRange}
+						onChange={setMultiplicationRange}
+						label="Multiplication Range"
+					/>
+					<DurationSelect
+						value={duration}
+						onChange={setDuration}
+						options={[
+							{ value: 30, label: '30 seconds' },
+							{ value: 60, label: '60 seconds' },
+							{ value: 90, label: '90 seconds' },
+							{ value: 120, label: '120 seconds' },
+						]}
+					/>
+					<button
+						type="submit"
+						style={{
+							width: '50%',
+							alignSelf: 'center',
+						}}
+					>
+						Start Game
+					</button>
+				</div>
 			</form>
 			{isLoading && (
 				<div
