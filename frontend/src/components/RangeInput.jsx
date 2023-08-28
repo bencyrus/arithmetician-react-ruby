@@ -9,14 +9,14 @@ const RangeInput = ({ value, onChange, label }) => {
 	return (
 		<label style={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
 			{label}:
-			<div style={{ display: 'flex', gap: '10px' }}>
+			<div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
 				<input
 					type="number"
 					value={value.min}
 					onChange={handleChange('min')}
 					style={{ flex: 1, padding: '10px' }}
 				/>
-				to
+				To
 				<input
 					type="number"
 					value={value.max}
