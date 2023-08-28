@@ -5,6 +5,7 @@ import GameContext from '../../context/GameContext'
 import RangeInput from '../RangeInput'
 import DurationSelect from '../DurationSelect'
 import useQuestions from '../../hooks/useQuestions'
+import './GameSettingsForm.css'
 
 const GameSettingsForm = () => {
 	const {
@@ -69,25 +70,9 @@ const GameSettingsForm = () => {
 	}
 
 	return (
-		<div>
-			<form
-				onSubmit={handleSubmit}
-				style={{
-					display: 'flex',
-					flexDirection: 'column',
-					alignItems: 'center',
-					maxWidth: '400px',
-					margin: 'auto',
-				}}
-			>
-				<div
-					style={{
-						display: 'flex',
-						flexDirection: 'column',
-						width: '100%',
-						gap: '10px',
-					}}
-				>
+		<div id="game-settings-form">
+			<form onSubmit={handleSubmit}>
+				<div className="container">
 					<RangeInput
 						value={additionRange}
 						onChange={setAdditionRange}
@@ -108,32 +93,13 @@ const GameSettingsForm = () => {
 							{ value: 120, label: '120 seconds' },
 						]}
 					/>
-					<button
-						type="submit"
-						style={{
-							width: '50%',
-							height: '30px',
-							alignSelf: 'center',
-						}}
-					>
+					<button type="submit" className="start-game-button">
 						Start Game
 					</button>
 				</div>
 			</form>
 			{isLoading && (
-				<div
-					style={{
-						position: 'absolute',
-						top: 0,
-						bottom: 0,
-						left: 0,
-						right: 0,
-						backgroundColor: 'rgba(255, 255, 255, 0.7)',
-						display: 'flex',
-						justifyContent: 'center',
-						alignItems: 'center',
-					}}
-				>
+				<div className="loading-overlay">
 					<ClipLoader color="#000" />
 				</div>
 			)}
