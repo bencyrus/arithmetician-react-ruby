@@ -70,7 +70,14 @@ const GameSettingsForm = () => {
 
 	return (
 		<div>
-			<form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+			<form
+				onSubmit={handleSubmit}
+				style={{
+					display: 'flex',
+					flexDirection: 'column',
+					alignItems: 'flex-start',
+				}}
+			>
 				<RangeInput
 					value={additionRange}
 					onChange={setAdditionRange}
@@ -94,7 +101,9 @@ const GameSettingsForm = () => {
 					]}
 					style={{ margin: '8px 0' }}
 				/>
-				<button type="submit" style={{ margin: '8px 0' }}>Start Game</button>
+				<button type="submit" style={{ margin: '8px 0' }}>
+					Start Game
+				</button>
 			</form>
 			{isLoading && (
 				<div
@@ -115,7 +124,6 @@ const GameSettingsForm = () => {
 			)}
 		</div>
 	)
-
 }
 
 export default GameSettingsForm
