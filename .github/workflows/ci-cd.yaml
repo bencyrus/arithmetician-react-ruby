@@ -38,12 +38,18 @@ jobs:
           name: arithmetician-artifact
           path: /home/runner/work/arithmetician/arithmetician-artifact
 
-      - name: Setup SSH and Deploy
+      - name: Setup SSH
         run: |
           sudo apt-get install -y openssh-client
           mkdir -p ~/.ssh
           ssh-keyscan 104.236.6.185 >> ~/.ssh/known_hosts
           echo "${{ secrets.GH_ACTIONS_SSH_KEY }}" > gh-actions-ssh-key
           chmod 600 gh-actions-ssh-key
+
+      - name: Copy Artifacts
+        run: |
           scp -r -i gh-actions-ssh-key /home/runner/work/arithmetician/arithmetician-artifact/* gh-actions@104.236.6.185:~/
+
+      - name: Deploy
+        run: |
           ssh -i gh-actions-ssh-key gh-actions@104.236.6.185 "export PGHOST=${{ secrets.PGHOST }} && export PGPORT=${{ secrets.PGPORT }} && export PGUSER=${{ secrets.PGUSER }} && export PGPASSWORD=${{ secrets.PGPASSWORD }} && export PGDATABASE=${{ secrets.PGDATABASE }} && docker-compose up -d --build --force-recreate"
