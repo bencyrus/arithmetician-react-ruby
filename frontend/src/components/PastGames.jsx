@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { ClipLoader } from 'react-spinners'
 import PastGamesListItem from './PastGamesListItem'
+import './PastGames.css'
 
 const PastGames = () => {
 	const [pastGames, setPastGames] = useState([])
@@ -43,13 +44,15 @@ const PastGames = () => {
 			) : (
 				<>
 					<h1>Past Games</h1>
-					{pastGames.map((game) => (
-						<PastGamesListItem
-							key={game.id}
-							game={game}
-							onDelete={handleDeleteGame}
-						/>
-					))}
+					<div className="game-list">
+						{pastGames.map((game) => (
+							<PastGamesListItem
+								key={game.id}
+								game={game}
+								onDelete={handleDeleteGame}
+							/>
+						))}
+					</div>
 				</>
 			)}
 		</div>

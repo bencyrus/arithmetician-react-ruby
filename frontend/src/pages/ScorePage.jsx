@@ -2,6 +2,7 @@ import { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import GameContext from '../context/GameContext'
 import useQuestions from '../hooks/useQuestions'
+import './ScorePage.css'
 
 const ScorePage = () => {
 	const {
@@ -49,8 +50,10 @@ const ScorePage = () => {
 	return (
 		<div id="score-page">
 			<h1>Your Score: {score}</h1>
-			<button onClick={handleChangeSettings}>Change Settings</button>
-			<button onClick={handleTryAgain}>Try Again</button>
+			<div className="buttons">
+				<button onClick={handleChangeSettings}>Change Settings</button>
+				<button onClick={handleTryAgain}>Try Again</button>
+			</div>
 		</div>
 	)
 }

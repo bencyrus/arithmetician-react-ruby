@@ -45,7 +45,7 @@ const PastGamesListItem = ({ game, onDelete }) => {
 	return (
 		<div
 			style={{
-				borderBottom: '1px solid #000',
+				borderBottom: '1px solid #CCCCCC',
 			}}
 		>
 			<div
