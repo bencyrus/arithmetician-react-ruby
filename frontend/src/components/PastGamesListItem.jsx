@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react'
 import { ClipLoader } from 'react-spinners'
-import { AiOutlineDown, AiOutlineUp, AiOutlineDelete } from 'react-icons/ai'
+import {
+	RiArrowDropDownLine,
+	RiArrowDropUpLine,
+	RiDeleteBin4Fill,
+} from 'react-icons/ri'
 
 const PastGamesListItem = ({ game, onDelete }) => {
 	const [isOpen, setIsOpen] = useState(false)
@@ -59,11 +63,15 @@ const PastGamesListItem = ({ game, onDelete }) => {
 					}}
 				>
 					{isOpen ? (
-						<AiOutlineUp size={25} />
+						<RiArrowDropUpLine size={30} />
 					) : (
-						<AiOutlineDown size={25} />
+						<RiArrowDropDownLine size={30} />
 					)}
-					<AiOutlineDelete size={25} onClick={handleDelete} />
+					<RiDeleteBin4Fill
+						size={20}
+						onClick={handleDelete}
+						color="#C80815"
+					/>
 				</div>
 			</div>
 			{isOpen && (
